@@ -1,130 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pablo Campos - Portafolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f9;
-      color: #333;
-    }
-
-    header {
-      background: #4CAF50;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-
-    .avatar {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      margin-bottom: 15px;
-    }
-
-    h1 {
-      margin: 10px 0 5px;
-    }
-
-    h2 {
-      margin: 0;
-      font-weight: normal;
-      color: #ddd;
-    }
-
-    main {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    section {
-      margin-bottom: 40px;
-    }
-
-    section h3 {
-      border-bottom: 2px solid #4CAF50;
-      padding-bottom: 5px;
-      margin-bottom: 15px;
-    }
-
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-    }
-
-    a {
-      color: #4CAF50;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pablo Campos — Portafolio</title>
+  <meta name="description" content="Portafolio de Pablo Campos: Finanzas, Tesorería, Proyectos, Automatización y Power BI." />
+  <link rel="stylesheet" href="assets/css/hacknotes.css" />
 </head>
 <body>
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">Pablo Campos</a>
 
-  <header>
-    <img class="avatar" src="foto.jpg" alt="Foto de Pablo Campos">
-    <h1>Pablo Campos</h1>
-    <h2>Profesional en Finanzas | Tesorería | Proyectos</h2>
+      <!-- Menú -->
+      <nav class="site-nav" role="navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Artículos ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="articles.html">Todos</a></li>
+              <li><a href="categories.html#tesoreria">Tesorería</a></li>
+              <li><a href="categories.html#proyectos">Proyectos</a></li>
+              <li><a href="categories.html#powerbi">Power BI</a></li>
+            </ul>
+          </li>
+          <li><a href="categories.html">Categorías</a></li>
+          <li><a href="tags.html">Etiquetas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Toggle móvil -->
+      <label for="menu-toggle" class="hamburger" aria-label="Abrir menú">☰</label>
+      <input id="menu-toggle" type="checkbox" />
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h3>Sobre mí</h3>
-      <p>
-        Soy profesional en Contaduría Pública con más de 10 años de experiencia en 
-        gestión financiera, tesorería, planeación estratégica y proyectos de transformación digital. 
-        Me apasiona la optimización de procesos financieros, el análisis de datos y 
-        la implementación de herramientas tecnológicas como Excel avanzado y Power BI.
-      </p>
-    </section>
+  <!-- Contenido -->
+  <main class="wrap layout">
+    <!-- Sidebar (perfil) -->
+    <aside class="sidebar card">
+      <!-- Si ya subiste tu foto a /assets/foto.jpg, se mostrará. -->
+      <img src="assets/foto.jpg" alt="Pablo Campos" class="avatar" />
+      <h3 style="margin: .25rem 0 0;">Pablo Campos</h3>
+      <p class="muted" style="margin-top:.25rem">Finanzas | Tesorería | Proyectos | Power BI</p>
 
-    <section>
-      <h3>Experiencia</h3>
-      <ul>
-        <li><strong>Coordinador de Tesorería</strong> - On Vacation</li>
-        <li><strong>Líder de Tesorería</strong> - Constructora Bolívar</li>
-        <li><strong>Coordinador de Tesorería</strong> - Laboratorio Bioimagen</li>
-      </ul>
-    </section>
+      <div class="badges">
+        <span class="badge">Tesorería</span>
+        <span class="badge">Finanzas</span>
+        <span class="badge">Automatización</span>
+        <span class="badge">Power BI</span>
+      </div>
 
-    <section>
-      <h3>Habilidades</h3>
-      <ul>
-        <li>Gestión de Tesorería y Flujo de Caja</li>
-        <li>Planeación Financiera</li>
-        <li>Automatización de reportes en Power BI</li>
-        <li>Metodologías ágiles (Scrum, Kanban, Lean)</li>
-        <li>Liderazgo y gestión de equipos</li>
-      </ul>
-    </section>
+      <div class="links">
+        <a href="mailto:pablocampos0530@gmail.com">✉️ Email</a>
+        <a href="https://github.com/Creatorpc05" target="_blank" rel="noopener">💻 GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">🔗 LinkedIn</a>
+        <!-- Si luego subes tu CV a assets/docs/CV_PabloCampos.pdf, este link funcionará -->
+        <!-- <a href="assets/docs/CV_PabloCampos.pdf" target="_blank" rel="noopener">📝 CV (PDF)</a> -->
+      </div>
+    </aside>
 
-    <section>
-      <h3>Contacto</h3>
-      <p>
-        📧 Email: <a href="mailto:tuemail@gmail.com">tuemail@gmail.com</a><br>
-        💼 LinkedIn: <a href="https://www.linkedin.com/in/tuusuario" target="_blank">linkedin.com/in/tuusuario</a><br>
-        🌐 GitHub: <a href="https://github.com/creatorpc05" target="_blank">github.com/creatorpc05</a>
-      </p>
+    <!-- Feed / listado tipo Hacknotes -->
+    <section class="content">
+      <!-- Hero -->
+      <div class="hero card">
+        <p class="muted">Portafolio</p>
+        <h1>Notas, artículos y proyectos</h1>
+        <p class="muted">Casos reales de tesorería, finanzas, automatización y tableros con Power BI.</p>
+      </div>
+
+      <!-- Lista de posts (ejemplos) -->
+      <article class="post card">
+        <div class="meta">23 Ago 2025 • <a href="categories.html#tesoreria">Tesorería</a> • <span class="tag">#Excel</span> <span class="tag">#PowerBI</span></div>
+        <h3><a href="posts/automatizacion-pagos.html">Automatización de pagos y reportes en Tesorería</a></h3>
+        <p>Flujo de aprobación, control de errores y visualización ejecutiva en Power BI. Reducción de tiempos operativos y mayor trazabilidad.</p>
+      </article>
+
+      <article class="post card">
+        <div class="meta">23 Ago 2025 • <a href="categories.html#proyectos">Proyectos</a> • <span class="tag">#Riesgos</span></div>
+        <h3><a href="posts/modelo-riesgos.html">Modelo de riesgos y reportes para comité</a></h3>
+        <p>Matriz estandarizada de riesgos, KPIs y tablero con indicadores clave para juntas directivas.</p>
+      </article>
+
+      <article class="post card">
+        <div class="meta">23 Ago 2025 • <a href="categories.html#powerbi">Power BI</a> • <span class="tag">#DAX</span></div>
+        <h3><a href="posts/dashboard-sop.html">Dashboard S&amp;OP — Demostración</a></h3>
+        <p>Tablero de alineación ventas–operaciones con medidas DAX y segmentación por canal.</p>
+      </article>
+
+      <!-- Contacto -->
+      <div id="contacto" class="card" style="margin-top:1rem">
+        <h3>Contacto</h3>
+        <p>¿Colaboramos o necesitas más información?</p>
+        <p><a href="mailto:pablocampos0530@gmail.com">pablocampos0530@gmail.com</a></p>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>© 2025 Pablo Campos - Todos los derechos reservados</p>
+  <footer class="site-footer">
+    <div class="wrap">
+      © 2025 Pablo Campos — Hecho con HTML/CSS estilo Hacknotes
+    </div>
   </footer>
-
 </body>
 </html>
