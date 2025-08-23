@@ -1,0 +1,55 @@
+/* ============ Variables y reset ============ */
+:root{
+  --bg:#f7f8f9; --text:#1f2937; --muted:#6b7280;
+  --primary:#198754; --primary-dark:#106c43;
+  --nav:#111827; --card:#ffffff; --border:#e5e7eb;
+}
+*{box-sizing:border-box} html,body{margin:0;padding:0}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+
+/* ============ Header y navegación ============ */
+header{background:var(--nav);color:#fff;position:sticky;top:0;z-index:10}
+.navbar{max-width:1100px;margin:0 auto;padding:0.75rem 1rem;display:flex;align-items:center;gap:1rem}
+.brand a{color:#fff;text-decoration:none;font-weight:700;font-size:1.1rem}
+#menu-toggle{display:none}
+.hamburger{display:none;color:#fff;font-size:1.5rem;cursor:pointer;padding:0 .5rem}
+.nav{margin-left:auto}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1rem}
+.nav a{color:#fff;text-decoration:none;padding:.5rem .25rem;display:inline-block}
+.nav li{position:relative}
+.dropdown > a::after{content:" ▾";font-size:.8rem}
+.dropdown-menu{display:none;position:absolute;top:100%;left:0;background:#fff;color:var(--text);min-width:200px;border:1px solid var(--border);border-radius:.5rem;box-shadow:0 8px 20px rgba(0,0,0,.08);overflow:hidden}
+.dropdown-menu a{color:var(--text);display:block;padding:.6rem .8rem}
+.dropdown:hover .dropdown-menu{display:block}
+
+/* ============ Layout principal ============ */
+.container{max-width:1100px;margin:0 auto;padding:1rem}
+.layout{display:grid;grid-template-columns:280px 1fr;gap:1.25rem;margin-top:1rem}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1rem}
+.avatar{width:120px;height:120px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;display:grid;place-items:center;font-weight:800;font-size:36px;margin:0 auto 1rem}
+.sidebar h3{margin:.25rem 0 .5rem}
+.sidebar .social a{display:flex;align-items:center;gap:.5rem;text-decoration:none;color:var(--text);padding:.35rem .5rem;border-radius:10px}
+.sidebar .social a:hover{background:#f1f5f9}
+.badge{display:inline-block;background:#e8f5ef;color:var(--primary);border:1px solid #cfe9dc;border-radius:999px;padding:.2rem .6rem;margin:.15rem 0;font-size:.8rem}
+
+/* ============ Contenido ============ */
+.hero{background:#0f172a;color:#fff;border-radius:14px;padding:2rem 1.25rem}
+.hero h1{margin:.2rem 0 0}
+.hero p{margin:.25rem 0 0;color:#cbd5e1}
+.post-list .post{padding:1rem;border:1px solid var(--border);border-radius:12px;background:#fff;margin-bottom:.8rem}
+.post .meta{color:var(--muted);font-size:.9rem;margin-bottom:.4rem}
+.post a{color:var(--primary);text-decoration:none}
+.post a:hover{text-decoration:underline}
+
+/* ============ Responsive ============ */
+@media (max-width:900px){
+  .layout{grid-template-columns:1fr}
+}
+@media (max-width:800px){
+  .hamburger{display:block}
+  .nav{display:none;width:100%}
+  #menu-toggle:checked + label + nav.nav{display:block}
+  .nav ul{flex-direction:column;gap:.25rem;padding:0 0 1rem}
+  .dropdown-menu{position:static;border:0;box-shadow:none;background:#1f2937}
+  .dropdown-menu a{color:#fff}
+}
