@@ -3,44 +3,140 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Portafolio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Pablo Campos | Portafolio</title>
+  <style>
+    /* ===== Estilos generales ===== */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #161b22;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #30363d;
+    }
+
+    header h1 {
+      color: #58a6ff;
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #c9d1d9;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #58a6ff;
+    }
+
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: #58a6ff;
+      border-bottom: 2px solid #30363d;
+      padding-bottom: 5px;
+    }
+
+    .proyecto {
+      background: #161b22;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 8px;
+      border: 1px solid #30363d;
+    }
+
+    .proyecto h3 {
+      margin: 0;
+      color: #58a6ff;
+    }
+
+    footer {
+      background: #161b22;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      border-top: 1px solid #30363d;
+      font-size: 14px;
+    }
+
+    a {
+      color: #58a6ff;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
+  <!-- ===== Encabezado ===== -->
   <header>
     <h1>Mi Portafolio</h1>
     <nav>
-      <ul>
-        <li><a href="#about">Sobre mí</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#contact">Contacto</a></li>
-      </ul>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>Sobre mí</h2>
-      <p>Hola, soy [Tu Nombre]. Este es mi portafolio inspirado en Hacknotes.</p>
-    </section>
+  <!-- ===== Sección Sobre mí ===== -->
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>
+      Hola, soy <strong>Pablo Campos</strong>.  
+      Tengo experiencia como <strong>Coordinador y Líder de Tesorería</strong>, especializado en gestión financiera, automatización de reportes, optimización de procesos y proyectos estratégicos.  
+      Me apasiona el análisis financiero avanzado, el desarrollo de soluciones prácticas en <strong>Power BI</strong> y la mejora de la eficiencia en áreas administrativas y de tesorería.  
+    </p>
+  </section>
 
-    <section id="projects">
-      <h2>Proyectos</h2>
-      <ul>
-        <li>📌 Proyecto 1</li>
-        <li>📌 Proyecto 2</li>
-        <li>📌 Proyecto 3</li>
-      </ul>
-    </section>
+  <!-- ===== Sección Proyectos ===== -->
+  <section id="proyectos">
+    <h2>Proyectos</h2>
 
-    <section id="contact">
-      <h2>Contacto</h2>
-      <p>Puedes escribirme a: <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a></p>
-    </section>
-  </main>
+    <div class="proyecto">
+      <h3>📊 Automatización de Reportes S&OP en Power BI</h3>
+      <p>Diseñé dashboards interactivos que integran datos financieros y operativos para mejorar la toma de decisiones.</p>
+    </div>
 
+    <div class="proyecto">
+      <h3>💰 Optimización de Procesos de Tesorería</h3>
+      <p>Implementación de mejoras en el ERP para agilizar conciliaciones y gestión de pagos internacionales.</p>
+    </div>
+
+    <div class="proyecto">
+      <h3>🌐 Proyecto Web Corporativo</h3>
+      <p>Rediseño de la página web corporativa con enfoque en indicadores de negocio y experiencia de usuario.</p>
+    </div>
+  </section>
+
+  <!-- ===== Sección Contacto ===== -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>📧 Correo: <a href="mailto:Pablocampos0530@gmail.com">Pablocampos0530@gmail.com</a></p>
+    <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/pablo-campos-174785174/" target="_blank">Mi perfil profesional</a></p>
+  </section>
+
+  <!-- ===== Footer ===== -->
   <footer>
-    <p>© 2025 Mi Portafolio</p>
+    © 2025 Pablo Campos | Portafolio inspirado en <a href="https://hacknotes.github.io/" target="_blank">Hacknotes</a>
   </footer>
 </body>
 </html>
+
