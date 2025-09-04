@@ -1,59 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PC Notes</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PC Notes</title>
+  <!-- ✅ Aquí corregimos: ahora llama a style.css -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Encabezado -->
-    <header>
-        <div class="navbar">
-            <div class="logo">
-                <a href="index.html">PC Notes</a>
-            </div>
-            <nav class="menu">
-                <a href="index.html">Home</a>
-                <a href="articulos.html">Artículos</a>
-                <a href="categorias.html">Categorías</a>
-                <a href="etiquetas.html">Etiquetas</a>
-                <a href="acerca.html">Acerca de</a>
-            </nav>
-        </div>
-    </header>
+  <!-- Encabezado -->
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <a href="#">PC Notes</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Artículos</a></li>
+          <li><a href="#">Categorías</a></li>
+          <li><a href="#">Etiquetas</a></li>
+          <li><a href="#">Acerca de</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenedor principal -->
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!-- ✅ Foto -->
+      <div class="profile">
+        <img src="assets/foto.jpg" alt="Foto de Pablo Campos">
+        <h2>Pablo Campos</h2>
+        <p>Finanzas · Proyectos · Power BI · IA</p>
+      </div>
+
+      <!-- Links -->
+      <div class="links">
+        <a href="mailto:tuemail@ejemplo.com">📧 Email</a><br>
+        <a href="https://www.linkedin.com" target="_blank">💼 LinkedIn</a><br>
+        <a href="https://github.com/creatorpc05" target="_blank">👨‍💻 GitHub</a>
+      </div>
+
+      <!-- Temas -->
+      <div class="temas">
+        <h3>Temas</h3>
+        <ul>
+          <li><a href="#">Power BI</a></li>
+          <li><a href="#">Finanzas</a></li>
+          <li><a href="#">Proyectos</a></li>
+          <li><a href="#">Otros</a></li>
+        </ul>
+      </div>
+    </aside>
 
     <!-- Contenido principal -->
-    <main>
-        <aside class="sidebar">
-            <h2>Pablo Campos</h2>
-            <p>Finanzas · Proyectos · Power BI · IA</p>
-            <div class="social">
-                <a href="mailto:correo@ejemplo.com">📧 Email</a>
-                <a href="#">💼 LinkedIn</a>
-                <a href="#">👨‍💻 GitHub</a>
-            </div>
-            <h3>Temas</h3>
-            <ul>
-                <li><a href="#">Power BI</a></li>
-                <li><a href="#">Finanzas</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Otros</a></li>
-            </ul>
-        </aside>
-
-        <section class="content">
-            <h2>Artículos recientes</h2>
-            <p>Aquí aparecerán los artículos publicados. (Por ahora está vacío).</p>
-        </section>
+    <main class="content">
+      <h2>Artículos recientes</h2>
+      <p>Aquí aparecerán los artículos publicados. (Por ahora está vacío).</p>
     </main>
+  </div>
 
-    <!-- Pie de página -->
-    <footer>
-        <p>© 2025 Pablo Campos | PC Notes</p>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Pablo Campos | PC Notes</p>
+  </footer>
 </body>
 </html>
+
 
 
 
