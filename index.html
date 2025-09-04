@@ -4,121 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PC Notes</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #121212;
-      color: #e0e0e0;
-    }
-
-    header {
-      background: #000;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 18px;
-      color: #00aaff;
-    }
-
-    nav a {
-      color: #fff;
-      margin-left: 15px;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    nav a:hover {
-      color: #00aaff;
-    }
-
-    .container {
-      display: flex;
-    }
-
-    aside {
-      width: 250px;
-      background: #1e1e1e;
-      padding: 20px;
-      border-right: 1px solid #333;
-      text-align: center;
-    }
-
-    aside img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 4px solid #00aaff; /* azul inicial */
-      transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    /* efecto hover */
-    aside img:hover {
-      border-color: #00ff99; /* verde brillante */
-      box-shadow: 0 0 15px #00ff99;
-    }
-
-    aside h2 {
-      margin: 10px 0 5px;
-      font-size: 18px;
-      color: #fff;
-    }
-
-    aside p {
-      font-size: 13px;
-      color: #bbb;
-    }
-
-    aside a {
-      display: block;
-      color: #00aaff;
-      text-decoration: none;
-      margin: 5px 0;
-      font-size: 14px;
-    }
-
-    aside a:hover {
-      text-decoration: underline;
-    }
-
-    main {
-      flex-grow: 1;
-      padding: 20px;
-    }
-
-    main h2 {
-      color: #00aaff;
-    }
-
-    footer {
-      text-align: center;
-      padding: 15px;
-      border-top: 1px solid #333;
-      background: #121212;
-      font-size: 13px;
-    }
-
-    footer a {
-      color: #00aaff;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>PC Notes</h1>
+    <h1><a href="index.html">PC Notes</a></h1>
     <nav>
-      <a href="#">Home</a>
+      <a href="index.html">Home</a>
       <a href="#">Artículos</a>
       <a href="#">Categorías</a>
       <a href="#">Etiquetas</a>
@@ -126,11 +18,14 @@
     </nav>
   </header>
 
-  <div class="container">
+  <main>
     <aside>
-      <img src="profile.jpg" alt="Pablo Campos">
+      <!-- FOTO DE PERFIL -->
+      <img src="profile.jpg" alt="Pablo Campos" class="profile-img">
+
       <h2>Pablo Campos</h2>
       <p>Finanzas · Proyectos · Power BI · IA</p>
+
       <a href="#">📧 Email</a>
       <a href="#">🔗 LinkedIn</a>
       <a href="#">👤 GitHub</a>
@@ -142,17 +37,18 @@
       <p>Otros</p>
     </aside>
 
-    <main>
+    <section>
       <h2>Artículos recientes</h2>
       <p>Aquí aparecerán los artículos publicados. (Por ahora está vacío).</p>
-    </main>
-  </div>
+    </section>
+  </main>
 
   <footer>
-    © 2025 Pablo Campos | <a href="#">PC Notes</a>
+    <p>© 2025 Pablo Campos | <a href="index.html">PC Notes</a></p>
   </footer>
 </body>
 </html>
+
 
 
 
