@@ -1,53 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PC Notes</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Notes</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1><a href="index.html">PC Notes</a></h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="#">Artículos</a>
-      <a href="#">Categorías</a>
-      <a href="#">Etiquetas</a>
-      <a href="#">Acerca de</a>
-    </nav>
-  </header>
+    <!-- Encabezado -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">PC Notes</a>
+            </div>
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="articulos.html">Artículos</a>
+                <a href="categorias.html">Categorías</a>
+                <a href="etiquetas.html">Etiquetas</a>
+                <a href="acerca.html">Acerca de</a>
+            </nav>
+        </div>
+    </header>
 
-  <main>
-    <aside>
-      <!-- FOTO DE PERFIL -->
-      <img src="profile.jpg" alt="Pablo Campos" class="profile-img">
+    <!-- Contenido principal -->
+    <main>
+        <aside class="sidebar">
+            <h2>Pablo Campos</h2>
+            <p>Finanzas · Proyectos · Power BI · IA</p>
+            <div class="social">
+                <a href="mailto:correo@ejemplo.com">📧 Email</a>
+                <a href="#">💼 LinkedIn</a>
+                <a href="#">👨‍💻 GitHub</a>
+            </div>
+            <h3>Temas</h3>
+            <ul>
+                <li><a href="#">Power BI</a></li>
+                <li><a href="#">Finanzas</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Otros</a></li>
+            </ul>
+        </aside>
 
-      <h2>Pablo Campos</h2>
-      <p>Finanzas · Proyectos · Power BI · IA</p>
+        <section class="content">
+            <h2>Artículos recientes</h2>
+            <p>Aquí aparecerán los artículos publicados. (Por ahora está vacío).</p>
+        </section>
+    </main>
 
-      <a href="#">📧 Email</a>
-      <a href="#">🔗 LinkedIn</a>
-      <a href="#">👤 GitHub</a>
-
-      <h3>Temas</h3>
-      <p>Power BI</p>
-      <p>Finanzas</p>
-      <p>Proyectos</p>
-      <p>Otros</p>
-    </aside>
-
-    <section>
-      <h2>Artículos recientes</h2>
-      <p>Aquí aparecerán los artículos publicados. (Por ahora está vacío).</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Pablo Campos | <a href="index.html">PC Notes</a></p>
-  </footer>
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2025 Pablo Campos | PC Notes</p>
+    </footer>
 </body>
 </html>
+
 
 
 
