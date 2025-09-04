@@ -3,72 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PC Notes</title>
-  <!-- ✅ Aquí corregimos: ahora llama a style.css -->
-  <link rel="stylesheet" href="style.css">
+  <title>Mi Portafolio</title>
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Centrar todo */
+    .container {
+      max-width: 1000px; /* límite de ancho */
+      margin: 0 auto;   /* centra el contenido */
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+    }
+
+    /* Columna izquierda (foto + info) */
+    .sidebar {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .sidebar img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    /* Columna derecha (contenido) */
+    .content {
+      flex: 2;
+    }
+
+    /* Menú arriba a la derecha */
+    .menu {
+      position: fixed;
+      top: 10px;
+      right: 20px;
+      text-align: right;
+    }
+
+    .menu a {
+      color: #00f;
+      text-decoration: none;
+      display: block;
+      margin: 5px 0;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    h2 {
+      border-bottom: 1px solid #444;
+      padding-bottom: 5px;
+    }
+  </style>
 </head>
 <body>
-  <!-- Encabezado -->
-  <header>
-    <div class="navbar">
-      <div class="logo">
-        <a href="#">PC Notes</a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Artículos</a></li>
-          <li><a href="#">Categorías</a></li>
-          <li><a href="#">Etiquetas</a></li>
-          <li><a href="#">Acerca de</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+
+  <!-- Menú fijo arriba -->
+  <div class="menu">
+    <a href="#">Inicio</a>
+    <a href="#">Proyectos</a>
+    <a href="#">Contacto</a>
+  </div>
 
   <!-- Contenedor principal -->
   <div class="container">
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <!-- ✅ Foto -->
-      <div class="profile">
-        <img src="assets/foto.jpg" alt="Foto de Pablo Campos">
-        <h2>Pablo Campos</h2>
-        <p>Finanzas · Proyectos · Power BI · IA</p>
-      </div>
+    
+    <!-- Columna izquierda -->
+    <div class="sidebar">
+      <img src="tu-foto.png" alt="Foto de perfil">
+      <h3>Pablo Campos</h3>
+      <p>Profesional en Tesorería & Finanzas</p>
+      <p>📍 Bogotá, Colombia</p>
+    </div>
 
-      <!-- Links -->
-      <div class="links">
-        <a href="mailto:tuemail@ejemplo.com">📧 Email</a><br>
-        <a href="https://www.linkedin.com" target="_blank">💼 LinkedIn</a><br>
-        <a href="https://github.com/creatorpc05" target="_blank">👨‍💻 GitHub</a>
-      </div>
+    <!-- Columna derecha -->
+    <div class="content">
+      <h2>Sobre mí</h2>
+      <p>Especialista en Tesorería, Finanzas Corporativas y Optimización de Procesos. 
+         Experiencia liderando equipos, negociando con bancos y gestionando flujos de caja.</p>
 
-      <!-- Temas -->
-      <div class="temas">
-        <h3>Temas</h3>
-        <ul>
-          <li><a href="#">Power BI</a></li>
-          <li><a href="#">Finanzas</a></li>
-          <li><a href="#">Proyectos</a></li>
-          <li><a href="#">Otros</a></li>
-        </ul>
-      </div>
-    </aside>
+      <h2>Experiencia</h2>
+      <ul>
+        <li><b>Coordinador de Tesorería</b> - On Vacation</li>
+        <li><b>Líder de Tesorería</b> - Constructora Bolívar</li>
+        <li><b>Coordinador de Tesorería</b> - Laboratorio Bioimagen</li>
+      </ul>
 
-    <!-- Contenido principal -->
-    <main class="content">
-      <h2>Artículos recientes</h2>
-      <p>Aquí aparecerán los artículos publicados. (Por ahora está vacío).</p>
-    </main>
+      <h2>Proyectos</h2>
+      <p>Automatización de reportes S&OP en Power BI, Optimización de procesos en ERP, 
+         Modelos financieros avanzados.</p>
+    </div>
   </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Pablo Campos | PC Notes</p>
-  </footer>
 </body>
 </html>
+
 
 
 
