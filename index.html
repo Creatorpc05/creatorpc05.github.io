@@ -1,83 +1,159 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>PC Notes – Portafolio | Pablo Campos</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PC Notes</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    header {
+      background: #000;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 18px;
+      color: #00aaff;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 15px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #00aaff;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    aside {
+      width: 250px;
+      background: #1e1e1e;
+      padding: 20px;
+      border-right: 1px solid #333;
+      text-align: center;
+    }
+
+    aside img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #00aaff; /* azul inicial */
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* efecto hover */
+    aside img:hover {
+      border-color: #00ff99; /* verde brillante */
+      box-shadow: 0 0 15px #00ff99;
+    }
+
+    aside h2 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+      color: #fff;
+    }
+
+    aside p {
+      font-size: 13px;
+      color: #bbb;
+    }
+
+    aside a {
+      display: block;
+      color: #00aaff;
+      text-decoration: none;
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    aside a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      flex-grow: 1;
+      padding: 20px;
+    }
+
+    main h2 {
+      color: #00aaff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      border-top: 1px solid #333;
+      background: #121212;
+      font-size: 13px;
+    }
+
+    footer a {
+      color: #00aaff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="navbar-inner">
-      <div class="navbar-left">
-        <a href="index.html" class="logo">PC Notes</a>
-      </div>
-      <nav class="navbar-right" aria-label="Navegación principal">
-        <a href="index.html">Home</a>
-        <a href="articles.html">Artículos</a>
-        <a href="categories.html">Categorías</a>
-        <a href="tags.html">Etiquetas</a>
-        <a href="about.html">Acerca de</a>
-      </nav>
-    </div>
+  <header>
+    <h1>PC Notes</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Artículos</a>
+      <a href="#">Categorías</a>
+      <a href="#">Etiquetas</a>
+      <a href="#">Acerca de</a>
+    </nav>
   </header>
 
-  <!-- MAIN CONTENT -->
   <div class="container">
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
-      <div class="profile">
-        <!-- FOTO -->
-        <div class="profile-pic">
-          <img src="assets/foto.jpg" alt="Pablo Campos">
-        </div>
-        <h2>Pablo Campos</h2>
-        <p>Finanzas · Proyectos · Power BI · IA</p>
+    <aside>
+      <img src="profile.jpg" alt="Pablo Campos">
+      <h2>Pablo Campos</h2>
+      <p>Finanzas · Proyectos · Power BI · IA</p>
+      <a href="#">📧 Email</a>
+      <a href="#">🔗 LinkedIn</a>
+      <a href="#">👤 GitHub</a>
 
-        <div class="social-links">
-          <a href="mailto:Pablocampos0530@gmail.com">📧 Email</a><br>
-          <a href="https://www.linkedin.com/in/pablocampos" target="_blank">🔗 LinkedIn</a><br>
-          <a href="https://github.com/Creatorpc05" target="_blank">👨‍💻 GitHub</a>
-        </div>
-
-        <h3>Temas</h3>
-        <ul>
-          <li><a href="#">Power BI</a></li>
-          <li><a href="#">Finanzas</a></li>
-          <li><a href="#">Proyectos</a></li>
-          <li><a href="#">Otros</a></li>
-        </ul>
-      </div>
+      <h3>Temas</h3>
+      <p>Power BI</p>
+      <p>Finanzas</p>
+      <p>Proyectos</p>
+      <p>Otros</p>
     </aside>
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <main class="content">
-      <h2 class="section-title">Artículos recientes</h2>
-      <p>Al hacer clic en <strong>Home</strong> verás la lista de artículos; por ahora son placeholders.</p>
-      <p>Home / Artículos</p>
-
-      <h2>Sobre mí</h2>
-      <p>
-        Hola, soy <strong>Pablo Campos</strong>. Bienvenido a mi portafolio y notas técnicas inspirado en Hacknotes.
-        Tengo experiencia en finanzas, tesorería, proyectos y analítica, con enfoque en automatización y optimización de procesos.
-      </p>
-
-      <h3>Proyectos destacados</h3>
-      <ul class="projects">
-        <li>📌 <strong>Optimización de Tesorería en ERP</strong> — Automatización de procesos financieros para mayor eficiencia.</li>
-        <li>📌 <strong>Automatización de Reportes S&OP</strong> — Dashboards en Power BI para decisiones estratégicas.</li>
-        <li>📌 <strong>Rediseño Web Corporativo</strong> — Coordinación de costos, KPIs y proyecciones para integración digital.</li>
-      </ul>
+    <main>
+      <h2>Artículos recientes</h2>
+      <p>Aquí aparecerán los artículos publicados. (Por ahora está vacío).</p>
     </main>
   </div>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>© 2025 Pablo Campos | <a href="index.html">PC Notes</a></p>
+  <footer>
+    © 2025 Pablo Campos | <a href="#">PC Notes</a>
   </footer>
 </body>
 </html>
+
 
 
 
