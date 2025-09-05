@@ -1,72 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PC Notes</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Centrar todo */
+    .container {
+      max-width: 1000px; /* límite de ancho */
+      margin: 0 auto;   /* centra el contenido */
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+    }
+
+    /* Columna izquierda (foto + info) */
+    .sidebar {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .sidebar img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    /* Columna derecha (contenido) */
+    .content {
+      flex: 2;
+    }
+
+    /* Menú arriba a la derecha */
+    .menu {
+      position: fixed;
+      top: 10px;
+      right: 20px;
+      text-align: right;
+    }
+
+    .menu a {
+      color: #00f;
+      text-decoration: none;
+      display: block;
+      margin: 5px 0;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    h2 {
+      border-bottom: 1px solid #444;
+      padding-bottom: 5px;
+    }
+  </style>
 </head>
 <body>
-    <!-- 🔹 Menú superior -->
-    <header>
-        <div class="navbar">
-            <div class="logo"><a href="index.html">PC Notes</a></div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Artículos</a></li>
-                    <li><a href="#">Categorías</a></li>
-                    <li><a href="#">Etiquetas</a></li>
-                    <li><a href="#">Acerca de</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <div class="container">
-        <!-- 🔹 Sidebar izquierda -->
-        <aside class="sidebar">
-            <img src="assets/profile.jpg" alt="Foto de perfil" class="profile-pic">
-            <h2>Pablo Campos</h2>
-            <p>Finanzas · Proyectos · Power BI · IA</p>
-            
-            <div class="links">
-                <a href="mailto:tuemail@gmail.com">✉ Email</a>
-                <a href="https://www.linkedin.com" target="_blank">🔗 LinkedIn</a>
-                <a href="https://github.com" target="_blank">💻 GitHub</a>
-            </div>
+  <!-- Menú fijo arriba -->
+  <div class="menu">
+    <a href="#">Inicio</a>
+    <a href="#">Proyectos</a>
+    <a href="#">Contacto</a>
+  </div>
 
-            <h3>Temas</h3>
-            <ul>
-                <li>Power BI</li>
-                <li>Finanzas</li>
-                <li>Proyectos</li>
-                <li>Otros</li>
-            </ul>
-        </aside>
-
-        <!-- 🔹 Contenido principal -->
-        <main class="content">
-            <h2>Sobre mí</h2>
-            <p>
-                Hola, soy <b>Pablo Campos</b>. Bienvenido a mi portafolio y notas técnicas inspirado en HackNotes. 
-                Tengo experiencia en finanzas, tesorería, proyectos y analítica, con enfoque en automatización y optimización de procesos.
-            </p>
-
-            <h3>Proyectos destacados</h3>
-            <ul class="projects">
-                <li>⭐ Optimización de Tesorería en ERP — Automatización de procesos financieros para mayor eficiencia.</li>
-                <li>⭐ Automatización de Reportes S&OP — Dashboards en Power BI para decisiones estratégicas.</li>
-                <li>⭐ Rediseño Web Corporativo — Coordinación de costos, KPIs y proyecciones para integración digital.</li>
-            </ul>
-        </main>
+  <!-- Contenedor principal -->
+  <div class="container">
+    
+    <!-- Columna izquierda -->
+    <div class="sidebar">
+      <img src="tu-foto.png" alt="Foto de perfil">
+      <h3>Pablo Campos</h3>
+      <p>Profesional en Tesorería & Finanzas</p>
+      <p>📍 Bogotá, Colombia</p>
     </div>
 
-    <footer>
-        <p>© 2025 Pablo Campos | PC Notes</p>
-    </footer>
+    <!-- Columna derecha -->
+    <div class="content">
+      <h2>Sobre mí</h2>
+      <p>Especialista en Tesorería, Finanzas Corporativas y Optimización de Procesos. 
+         Experiencia liderando equipos, negociando con bancos y gestionando flujos de caja.</p>
+
+      <h2>Experiencia</h2>
+      <ul>
+        <li><b>Coordinador de Tesorería</b> - On Vacation</li>
+        <li><b>Líder de Tesorería</b> - Constructora Bolívar</li>
+        <li><b>Coordinador de Tesorería</b> - Laboratorio Bioimagen</li>
+      </ul>
+
+      <h2>Proyectos</h2>
+      <p>Automatización de reportes S&OP en Power BI, Optimización de procesos en ERP, 
+         Modelos financieros avanzados.</p>
+    </div>
+  </div>
+
 </body>
 </html>
+
 
 
 
