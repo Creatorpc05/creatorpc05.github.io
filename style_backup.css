@@ -1,0 +1,144 @@
+/* ====== GENERAL ====== */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #181a1b;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* ====== NAVBAR ====== */
+.navbar {
+  background: #111;
+  padding: 10px 20px;
+}
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-left .logo {
+  color: #4db5ff;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+}
+.navbar-right a {
+  color: #ccc;
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 15px;
+}
+.navbar-right a:hover {
+  color: #4db5ff;
+}
+
+/* ====== LAYOUT ====== */
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* ====== SIDEBAR ====== */
+.sidebar {
+  width: 280px;
+  padding: 20px;
+  border-right: 1px solid #333;
+}
+.profile {
+  text-align: center;
+}
+.profile h2 {
+  margin: 15px 0 5px;
+}
+.profile p {
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* ====== FOTO PERFIL ====== */
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  border: 3px solid #4db5ff;
+  overflow: hidden;
+}
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ====== SOCIAL LINKS ====== */
+.social-links a {
+  display: block;
+  color: #4db5ff;
+  margin: 5px 0;
+  text-decoration: none;
+}
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* ====== TEMAS ====== */
+.sidebar h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar ul li {
+  margin: 8px 0;
+}
+.sidebar ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+.sidebar ul li a:hover {
+  color: #4db5ff;
+}
+
+/* ====== CONTENIDO PRINCIPAL ====== */
+.content {
+  flex: 1;
+  padding: 20px;
+}
+.section-title {
+  color: #4db5ff;
+}
+.projects {
+  list-style: none;
+  padding: 0;
+}
+.projects li {
+  background: #2a2d2e;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.projects li strong {
+  color: #fff;
+}
+
+/* ====== FOOTER ====== */
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: #111;
+  margin-top: 30px;
+}
+.footer a {
+  color: #4db5ff;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
