@@ -1,70 +1,87 @@
-/* Estilos generales */
+/* ====== GENERAL ====== */
 body {
-  background-color: #121212;
-  color: #e0e0e0;
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #181a1b;
+  color: #e0e0e0;
+  line-height: 1.6;
 }
 
-a {
-  color: #00aaff;
-  text-decoration: none;
+/* ====== NAVBAR ====== */
+.navbar {
+  background: #111;
+  padding: 10px 20px;
 }
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Sidebar */
-.sidebar {
-  background-color: #1e1e1e;
-  padding: 20px;
-  width: 250px;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
+.navbar-inner {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
-
-.sidebar img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  border: 5px solid #00aaff; /* borde inicial azul */
-  transition: all 0.3s ease-in-out;
+.navbar-left .logo {
+  color: #4db5ff;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+}
+.navbar-right a {
+  color: #ccc;
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 15px;
+}
+.navbar-right a:hover {
+  color: #4db5ff;
 }
 
-/* Nombre y descripción */
-.sidebar h2 {
-  margin: 15px 0 5px;
-  color: #fff;
+/* ====== LAYOUT ====== */
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
 }
 
-.sidebar p {
-  color: #bbb;
-  margin: 0 0 15px;
+/* ====== SIDEBAR ====== */
+.sidebar {
+  width: 280px;
+  padding: 20px;
+  border-right: 1px solid #333;
+}
+.profile {
   text-align: center;
 }
-
-/* Contenido principal */
-.content {
-  margin-left: 270px;
-  padding: 20px;
+.profile h2 {
+  margin: 15px 0 5px;
+}
+.profile p {
+  color: #aaa;
+  font-size: 14px;
 }
 
-/* Hover efecto en la foto con animación pulse */
+/* ====== FOTO PERFIL ====== */
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  border: 3px solid #4db5ff;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==== EFECTO HOVER LATIDO EN FOTO PERFIL ==== */
 .profile-pic:hover {
   border-color: #ff005d; /* fucsia brillante */
   box-shadow: 0 0 20px #ff005d;
   animation: pulse 1.2s infinite; /* efecto latido */
-  transition: all 0.3s ease-in-out;
 }
 
-/* Animación de latido */
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -72,10 +89,79 @@ a:hover {
   }
   50% {
     transform: scale(1.08);
-    box-shadow: 0 0 40px #ff337f;
+    box-shadow: 0 0 40px #ff33aa;
   }
   100% {
     transform: scale(1);
     box-shadow: 0 0 20px #ff005d;
   }
+}
+
+/* ====== SOCIAL LINKS ====== */
+.social-links a {
+  display: block;
+  color: #4db5ff;
+  margin: 5px 0;
+  text-decoration: none;
+}
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* ====== TEMAS ====== */
+.sidebar h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar ul li {
+  margin: 8px 0;
+}
+.sidebar ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+.sidebar ul li a:hover {
+  color: #4db5ff;
+}
+
+/* ====== CONTENIDO PRINCIPAL ====== */
+.content {
+  flex: 1;
+  padding: 20px;
+}
+.section-title {
+  color: #4db5ff;
+}
+.projects {
+  list-style: none;
+  padding: 0;
+}
+.projects li {
+  background: #2a2d2e;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.projects li strong {
+  color: #fff;
+}
+
+/* ====== FOOTER ====== */
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: #111;
+  margin-top: 30px;
+}
+.footer a {
+  color: #4db5ff;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
 }
