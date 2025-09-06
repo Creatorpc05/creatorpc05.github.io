@@ -1,150 +1,81 @@
-/* ====== GENERAL ====== */
+/* Estilos generales */
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #181a1b;
+  background-color: #121212;
   color: #e0e0e0;
-  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* ====== NAVBAR ====== */
-.navbar {
-  background: #111;
-  padding: 10px 20px;
+a {
+  color: #00aaff;
+  text-decoration: none;
 }
-.navbar-inner {
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #1e1e1e;
+  padding: 20px;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 }
-.navbar-left .logo {
-  color: #4db5ff;
-  font-weight: bold;
-  font-size: 18px;
-  text-decoration: none;
-}
-.navbar-right a {
-  color: #ccc;
-  margin-left: 15px;
-  text-decoration: none;
-  font-size: 15px;
-}
-.navbar-right a:hover {
-  color: #4db5ff;
-}
 
-/* ====== LAYOUT ====== */
-.container {
-  display: flex;
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 0 20px;
-}
-
-/* ====== SIDEBAR ====== */
-.sidebar {
-  width: 280px;
-  padding: 20px;
-  border-right: 1px solid #333;
-}
-.profile {
-  text-align: center;
-}
-.profile h2 {
-  margin: 15px 0 5px;
-}
-.profile p {
-  color: #aaa;
-  font-size: 14px;
-}
-
-/* ====== FOTO PERFIL ====== */
-.profile-pic {
-  width: 160px;
-  height: 160px;
-  margin: 0 auto 15px;
+.sidebar img {
   border-radius: 50%;
-  border: 3px solid #4db5ff;
-  overflow: hidden;
-}
-.profile-pic img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-/* Hover efecto en la foto */
-.profile-pic:hover {
-  border-color: #ff005d; /* fucsia brillante */
-  box-shadow: 0 0 20px #ff005d; /* brillo al pasar el mouse */
+  width: 150px;
+  height: 150px;
+  border: 5px solid #00aaff; /* borde inicial azul */
   transition: all 0.3s ease-in-out;
 }
 
-/* ====== SOCIAL LINKS ====== */
-.social-links a {
-  display: block;
-  color: #4db5ff;
-  margin: 5px 0;
-  text-decoration: none;
-}
-.social-links a:hover {
-  text-decoration: underline;
-}
-
-/* ====== TEMAS ====== */
-.sidebar h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+/* Nombre y descripción */
+.sidebar h2 {
+  margin: 15px 0 5px;
   color: #fff;
 }
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-.sidebar ul li {
-  margin: 8px 0;
-}
-.sidebar ul li a {
-  color: #ccc;
-  text-decoration: none;
-}
-.sidebar ul li a:hover {
-  color: #4db5ff;
+
+.sidebar p {
+  color: #bbb;
+  margin: 0 0 15px;
+  text-align: center;
 }
 
-/* ====== CONTENIDO PRINCIPAL ====== */
+/* Contenido principal */
 .content {
-  flex: 1;
+  margin-left: 270px;
   padding: 20px;
 }
-.section-title {
-  color: #4db5ff;
-}
-.projects {
-  list-style: none;
-  padding: 0;
-}
-.projects li {
-  background: #2a2d2e;
-  padding: 12px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-.projects li strong {
-  color: #fff;
+
+/* Hover efecto en la foto con animación pulse */
+.profile-pic:hover {
+  border-color: #ff005d; /* fucsia brillante */
+  box-shadow: 0 0 20px #ff005d;
+  animation: pulse 1.2s infinite; /* efecto latido */
+  transition: all 0.3s ease-in-out;
 }
 
-/* ====== FOOTER ====== */
-.footer {
-  text-align: center;
-  padding: 15px;
-  background: #111;
-  margin-top: 30px;
-}
-.footer a {
-  color: #4db5ff;
-  text-decoration: none;
-}
-.footer a:hover {
-  text-decoration: underline;
+/* Animación de latido */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 20px #ff005d;
+  }
+  50% {
+    transform: scale(1.08);
+    box-shadow: 0 0 40px #ff337f;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px #ff005d;
+  }
 }
