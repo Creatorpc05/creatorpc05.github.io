@@ -3,63 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PC Notes | Pablo Campos</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Portafolio | Creatorpc05</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Barra superior -->
+  <!-- Navbar -->
   <header class="navbar">
-    <div class="logo">PC Notes</div>
-    <nav>
-      <a href="#">Inicio</a>
-      <a href="#">Artículos</a>
-      <a href="#">Categorías</a>
-      <a href="#">Etiquetas</a>
-      <a href="#">Acerca de</a>
+    <div class="navbar_logo">Creatorpc05</div>
+    <nav class="navbar_links">
+      <a href="#about">Sobre mí</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#skills">Habilidades</a>
+      <a href="#contact">Contacto</a>
     </nav>
   </header>
 
-  <main class="container">
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <img src="perfil.jpg" alt="Foto de perfil" class="foto-perfil">
-      <h2>Pablo Campos</h2>
-      <p class="tags">Finanzas • Proyectos • Power BI • IA</p>
-      <div class="links">
-        <a href="mailto:tuemail@gmail.com">📧 Email</a>
-        <a href="https://www.linkedin.com/in/tuusuario" target="_blank">🔗 LinkedIn</a>
-        <a href="https://github.com/creatorpc05" target="_blank">💻 GitHub</a>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero_content">
+      <h1>Hola, soy <span>Creatorpc05</span></h1>
+      <p>Profesional en Finanzas y Proyectos | Desarrollo de Negocios | Analítica</p>
+      <a href="#projects" class="btn">Ver Portafolio</a>
+    </div>
+  </section>
+
+  <!-- Sobre mí -->
+  <section id="about" class="section">
+    <h2>Sobre mí</h2>
+    <p>
+      Soy un profesional con experiencia en tesorería, finanzas corporativas y gestión de proyectos. 
+      Me especializo en analítica financiera avanzada, optimización de procesos y automatización de reportes.
+    </p>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="projects" class="section">
+    <h2>Proyectos</h2>
+    <div class="projects_grid">
+      <div class="card">
+        <h3>Proyecto Web Corporativo</h3>
+        <p>Diseño y gestión de un portal corporativo integrando varias empresas del grupo.</p>
       </div>
-      <h3>Temas</h3>
-      <ul>
-        <li><a href="#">Power BI</a></li>
-        <li><a href="#">Finanzas</a></li>
-        <li><a href="#">Proyectos</a></li>
-        <li><a href="#">Otros</a></li>
-      </ul>
-    </aside>
+      <div class="card">
+        <h3>Automatización Financiera</h3>
+        <p>Implementación de reportes S&OP en Power BI conectados a ERP.</p>
+      </div>
+      <div class="card">
+        <h3>Modelo Basilea III</h3>
+        <p>Plantilla de análisis del impacto de Basilea III en bancos y fintech.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contenido principal -->
-    <section class="content">
-      <h1>Sobre mí</h1>
-      <p>
-        Hola, soy <strong>Pablo Campos</strong>. Bienvenido a mi portafolio y notas técnicas inspiradas en HackNotes. 
-        Tengo experiencia en finanzas, tesorería, proyectos y analítica, con enfoque en automatización y optimización de procesos.
-      </p>
+  <!-- Habilidades -->
+  <section id="skills" class="section">
+    <h2>Habilidades</h2>
+    <ul class="skills_list">
+      <li>Liderazgo y gestión de equipos</li>
+      <li>Negociación y toma de decisiones</li>
+      <li>Analítica financiera y KPIs</li>
+      <li>Power BI, Excel avanzado</li>
+      <li>Automatización de procesos</li>
+    </ul>
+  </section>
 
-      <h2>Proyectos destacados</h2>
-      <div class="card">⭐ Optimización de Tesorería en ERP — Automatización de procesos financieros para mayor eficiencia.</div>
-      <div class="card">⭐ Automatización de Reportes S&OP — Dashboards en Power BI para decisiones estratégicas.</div>
-      <div class="card">⭐ Rediseño Web Corporativo — Coordinación de costos, KPIs y proyecciones para integración digital.</div>
-    </section>
-  </main>
+  <!-- Contacto -->
+  <section id="contact" class="section">
+    <h2>Contacto</h2>
+    <p>📧 <a href="mailto:tuemail@example.com">tuemail@example.com</a></p>
+    <p>🌐 <a href="https://www.linkedin.com/in/tuusuario/" target="_blank">LinkedIn</a></p>
+    <p>📂 <a href="https://github.com/Creatorpc05" target="_blank">GitHub</a></p>
+  </section>
 
   <!-- Footer -->
-  <footer>
-    © 2025 Pablo Campos | PC Notes
+  <footer class="footer">
+    <p>© 2025 Creatorpc05 - Portafolio Personal</p>
   </footer>
 </body>
 </html>
+
 
 
 
