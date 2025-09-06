@@ -1,113 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio - Pablo Campos</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #121212;
-      color: #e0e0e0;
-    }
-    header {
-      background-color: #1e1e1e;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      color: #2196f3;
-      margin: 0;
-    }
-    nav {
-      text-align: center;
-      margin-top: 10px;
-    }
-    nav a {
-      color: #2196f3;
-      margin: 0 15px;
-      text-decoration: none;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #2196f3;
-    }
-    .proyecto {
-      background: #1e1e1e;
-      padding: 15px;
-      margin: 15px 0;
-      border-radius: 8px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #1e1e1e;
-      margin-top: 20px;
-    }
-    footer a {
-      color: #2196f3;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PC Notes – Portafolio | Pablo Campos</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Mi Portafolio - Pablo Campos</h1>
-    <nav>
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <div class="navbar-left">
+        <a href="index.html" class="logo">PC Notes</a>
+      </div>
+      <nav class="navbar-right" aria-label="Navegación principal">
+        <a href="index.html">Home</a>
+        <a href="articles.html">Artículos</a>
+        <a href="categories.html">Categorías</a>
+        <a href="tags.html">Etiquetas</a>
+        <a href="about.html">Acerca de</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="sobre-mi">
-    <h2>Sobre mí</h2>
-    <p>Hola, soy <strong>Pablo Campos</strong>. Bienvenido a mi portafolio profesional inspirado en Hacknotes.  
-    Tengo experiencia en <b>finanzas, tesorería, proyectos y analítica</b>, con un enfoque en optimización de procesos y automatización.</p>
-  </section>
+  <!-- MAIN CONTENT -->
+  <div class="container">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="profile">
+        <!-- FOTO -->
+        <div class="profile-pic">
+          <img src="assets/foto.jpg" alt="Pablo Campos">
+        </div>
+        <h2>Pablo Campos</h2>
+        <p>Finanzas · Proyectos · Power BI · IA</p>
 
-  <section id="proyectos">
-    <h2>Proyectos</h2>
-    <div class="proyecto">📌 <b>Optimización de Tesorería en ERP</b> – Automatización de procesos financieros para mayor eficiencia.</div>
-    <div class="proyecto">📌 <b>Automatización de Reportes S&OP</b> – Desarrollo de dashboards en Power BI para decisiones estratégicas.</div>
-    <div class="proyecto">📌 <b>Rediseño Web Corporativo</b> – Coordinación de costos, KPIs y proyecciones para proyecto de integración digital.</div>
-  </section>
+        <div class="social-links">
+          <a href="mailto:Pablocampos0530@gmail.com">📧 Email</a><br>
+          <a href="https://www.linkedin.com/in/pablocampos" target="_blank">🔗 LinkedIn</a><br>
+          <a href="https://github.com/Creatorpc05" target="_blank">👨‍💻 GitHub</a>
+        </div>
 
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>📧 Escríbeme a: <a href="mailto:Pablocampos0530@gmail.com">Pablocampos0530@gmail.com</a></p>
-    <p>🌐 Conéctate en <a href="https://www.linkedin.com/in/pablo-campos-174785174/" target="_blank">LinkedIn</a></p>
-  </section>
+        <h3>Temas</h3>
+        <ul>
+          <li><a href="#">Power BI</a></li>
+          <li><a href="#">Finanzas</a></li>
+          <li><a href="#">Proyectos</a></li>
+          <li><a href="#">Otros</a></li>
+        </ul>
+      </div>
+    </aside>
 
-  <footer>
-    <p>© 2025 Pablo Campos | <a href="https://creatorpc05.github.io">Mi Portafolio</a></p>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="content">
+      <h2 class="section-title">Artículos recientes</h2>
+      <p>Al hacer clic en <strong>Home</strong> verás la lista de artículos; por ahora son placeholders.</p>
+      <p>Home / Artículos</p>
+
+      <h2>Sobre mí</h2>
+      <p>
+        Hola, soy <strong>Pablo Campos</strong>. Bienvenido a mi portafolio y notas técnicas inspirado en Hacknotes.
+        Tengo experiencia en finanzas, tesorería, proyectos y analítica, con enfoque en automatización y optimización de procesos.
+      </p>
+
+      <h3>Proyectos destacados</h3>
+      <ul class="projects">
+        <li>📌 <strong>Optimización de Tesorería en ERP</strong> — Automatización de procesos financieros para mayor eficiencia.</li>
+        <li>📌 <strong>Automatización de Reportes S&OP</strong> — Dashboards en Power BI para decisiones estratégicas.</li>
+        <li>📌 <strong>Rediseño Web Corporativo</strong> — Coordinación de costos, KPIs y proyecciones para integración digital.</li>
+      </ul>
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Pablo Campos | <a href="index.html">PC Notes</a></p>
   </footer>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
