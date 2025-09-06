@@ -73,6 +73,12 @@ body {
   object-fit: cover;
   display: block;
 }
+/* Hover efecto en la foto */
+.profile-pic:hover {
+  border-color: #ff005d; /* fucsia brillante */
+  box-shadow: 0 0 20px #ff005d; /* brillo al pasar el mouse */
+  transition: all 0.3s ease-in-out;
+}
 
 /* ====== SOCIAL LINKS ====== */
 .social-links a {
@@ -142,6 +148,3 @@ body {
 .footer a:hover {
   text-decoration: underline;
 }
-
-
-
