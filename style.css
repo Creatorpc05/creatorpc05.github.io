@@ -66,35 +66,12 @@ body {
   border-radius: 50%;
   border: 3px solid #4db5ff;
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
 }
 .profile-pic img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
-}
-
-/* ==== EFECTO HOVER LATIDO EN FOTO PERFIL ==== */
-.profile-pic:hover {
-  border-color: #ff005d; /* fucsia brillante */
-  box-shadow: 0 0 20px #ff005d;
-  animation: pulse 1.2s infinite; /* efecto latido */
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    box-shadow: 0 0 20px #ff005d;
-  }
-  50% {
-    transform: scale(1.08);
-    box-shadow: 0 0 40px #ff33aa;
-  }
-  100% {
-    transform: scale(1);
-    box-shadow: 0 0 20px #ff005d;
-  }
 }
 
 /* ====== SOCIAL LINKS ====== */
