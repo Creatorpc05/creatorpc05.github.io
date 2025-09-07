@@ -1,132 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portafolio - Pablo Campos</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-
-    header {
-      text-align: center;
-      padding: 50px 20px;
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
-      color: white;
-    }
-
-    header img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 5px solid #3498db;
-      box-shadow: 0 0 20px rgba(52, 152, 219, 0.6);
-      animation: heartbeat 1.2s infinite;
-      transition: all 0.3s ease-in-out;
-    }
-
-    header img:hover {
-      border-color: fuchsia;
-      box-shadow: 0 0 25px fuchsia;
-    }
-
-    @keyframes heartbeat {
-      0%, 100% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.1);
-      }
-    }
-
-    header h1 {
-      margin: 20px 0 10px;
-      font-size: 2.5em;
-    }
-
-    header p {
-      font-size: 1.2em;
-    }
-
-    .social-links {
-      margin-top: 15px;
-    }
-
-    .social-links a {
-      margin: 0 10px;
-      color: white;
-      font-size: 1.5em;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-
-    .social-links a:hover {
-      color: fuchsia;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    section h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #2a5298;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #2a5298;
-      color: white;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pablo Campos - Portafolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <header>
-    <img src="tu-foto.jpg" alt="Foto de Pablo Campos" />
+    <div class="profile-photo">
+      <img src="foto.jpg" alt="Foto de Pablo Campos">
+    </div>
     <h1>Pablo Campos</h1>
     <p>Profesional en Finanzas | Tesorería | Analítica Financiera</p>
-    <div class="social-links">
+    <div class="social-icons">
       <a href="https://www.linkedin.com/in/pablo-campos-174785174/" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-linkedin"></i>
       </a>
-      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="mailto:tuemail@ejemplo.com">
+      <a href="mailto:tuemail@correo.com">
         <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://github.com/creatorpc05" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i>
       </a>
     </div>
   </header>
 
-  <section>
-    <h2>Sobre mí</h2>
-    <p>
-      Soy un profesional con experiencia en tesorería, gestión financiera y optimización de procesos.
-      Apasionado por la analítica y la automatización de reportes financieros, con habilidades en liderazgo,
-      trabajo en equipo y toma de decisiones estratégicas.
-    </p>
-  </section>
+  <main>
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>
+        Soy un profesional con experiencia en tesorería, gestión financiera y optimización de procesos.
+        Apasionado por la analítica y la automatización de reportes financieros, con habilidades en liderazgo,
+        trabajo en equipo y toma de decisiones estratégicas.
+      </p>
+    </section>
 
-  <section>
-    <h2>Proyectos</h2>
-    <p>
-      Aquí puedes incluir algunos de tus proyectos más destacados, reportes automatizados, modelos financieros
-      o presentaciones que hayas desarrollado.
-    </p>
-  </section>
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <p>
+        Aquí puedes incluir algunos de tus proyectos más destacados, reportes automatizados, modelos financieros
+        o presentaciones que hayas desarrollado.
+      </p>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Pablo Campos. Todos los derechos reservados.</p>
+    <p>© 2025 Pablo Campos. Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
