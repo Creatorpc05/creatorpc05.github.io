@@ -1,80 +1,132 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>PC Notes – Portafolio | Pablo Campos</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio - Pablo Campos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid #3498db;
+      box-shadow: 0 0 20px rgba(52, 152, 219, 0.6);
+      animation: heartbeat 1.2s infinite;
+      transition: all 0.3s ease-in-out;
+    }
+
+    header img:hover {
+      border-color: fuchsia;
+      box-shadow: 0 0 25px fuchsia;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+    header h1 {
+      margin: 20px 0 10px;
+      font-size: 2.5em;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    .social-links {
+      margin-top: 15px;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      color: white;
+      font-size: 1.5em;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: fuchsia;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2a5298;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2a5298;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="navbar-inner">
-      <div class="navbar-left">
-        <a href="index.html" class="logo">PC Notes</a>
-      </div>
-      <nav class="navbar-right" aria-label="Navegación principal">
-        <a href="index.html">Home</a>
-        <a href="articles.html">Artículos</a>
-        <a href="categories.html">Categorías</a>
-        <a href="tags.html">Etiquetas</a>
-        <a href="about.html">Acerca de</a>
-      </nav>
+  <header>
+    <img src="tu-foto.jpg" alt="Foto de Pablo Campos" />
+    <h1>Pablo Campos</h1>
+    <p>Profesional en Finanzas | Tesorería | Analítica Financiera</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/pablo-campos-174785174/" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:tuemail@ejemplo.com">
+        <i class="fas fa-envelope"></i>
+      </a>
     </div>
   </header>
 
-  <!-- MAIN CONTENT -->
-  <div class="container">
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
-      <div class="profile">
-        <!-- FOTO -->
-        <div class="profile-pic">
-          <img src="assets/foto.jpg" alt="Pablo Campos">
-        </div>
-        <h2>Pablo Campos</h2>
-        <p>Finanzas · Proyectos · Power BI · IA</p>
+  <section>
+    <h2>Sobre mí</h2>
+    <p>
+      Soy un profesional con experiencia en tesorería, gestión financiera y optimización de procesos.
+      Apasionado por la analítica y la automatización de reportes financieros, con habilidades en liderazgo,
+      trabajo en equipo y toma de decisiones estratégicas.
+    </p>
+  </section>
 
-        <div class="social-links">
-          <a href="mailto:Pablocampos0530@gmail.com">📧 Email</a><br>
-          <a href="https://www.linkedin.com/in/pablocampos" target="_blank">🔗 LinkedIn</a><br>
-          <a href="https://github.com/Creatorpc05" target="_blank">👨‍💻 GitHub</a>
-        </div>
+  <section>
+    <h2>Proyectos</h2>
+    <p>
+      Aquí puedes incluir algunos de tus proyectos más destacados, reportes automatizados, modelos financieros
+      o presentaciones que hayas desarrollado.
+    </p>
+  </section>
 
-        <h3>Temas</h3>
-        <ul>
-          <li><a href="#">Power BI</a></li>
-          <li><a href="#">Finanzas</a></li>
-          <li><a href="#">Proyectos</a></li>
-          <li><a href="#">Otros</a></li>
-        </ul>
-      </div>
-    </aside>
-
-    <!-- CONTENIDO PRINCIPAL -->
-    <main class="content">
-      <h2 class="section-title">Artículos recientes</h2>
-      <p>Al hacer clic en <strong>Home</strong> verás la lista de artículos; por ahora son placeholders.</p>
-      <p>Home / Artículos</p>
-
-      <h2>Sobre mí</h2>
-      <p>
-        Hola, soy <strong>Pablo Campos</strong>. Bienvenido a mi portafolio y notas técnicas inspirado en Hacknotes.
-        Tengo experiencia en finanzas, tesorería, proyectos y analítica, con enfoque en automatización y optimización de procesos.
-      </p>
-
-      <h3>Proyectos destacados</h3>
-      <ul class="projects">
-        <li>📌 <strong>Optimización de Tesorería en ERP</strong> — Automatización de procesos financieros para mayor eficiencia.</li>
-        <li>📌 <strong>Automatización de Reportes S&OP</strong> — Dashboards en Power BI para decisiones estratégicas.</li>
-        <li>📌 <strong>Rediseño Web Corporativo</strong> — Coordinación de costos, KPIs y proyecciones para integración digital.</li>
-      </ul>
-    </main>
-  </div>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>© 2025 Pablo Campos | <a href="index.html">PC Notes</a></p>
+  <footer>
+    <p>&copy; 2025 Pablo Campos. Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
