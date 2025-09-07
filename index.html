@@ -1,81 +1,80 @@
-/* Estilos generales */
-body {
-  background-color: #121212;
-  color: #e0e0e0;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PC Notes – Portafolio | Pablo Campos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <div class="navbar-left">
+        <a href="index.html" class="logo">PC Notes</a>
+      </div>
+      <nav class="navbar-right" aria-label="Navegación principal">
+        <a href="index.html">Home</a>
+        <a href="articles.html">Artículos</a>
+        <a href="categories.html">Categorías</a>
+        <a href="tags.html">Etiquetas</a>
+        <a href="about.html">Acerca de</a>
+      </nav>
+    </div>
+  </header>
 
-a {
-  color: #00aaff;
-  text-decoration: none;
-}
+  <!-- MAIN CONTENT -->
+  <div class="container">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="profile">
+        <!-- FOTO -->
+        <div class="profile-pic">
+          <img src="assets/foto.jpg" alt="Pablo Campos">
+        </div>
+        <h2>Pablo Campos</h2>
+        <p>Finanzas · Proyectos · Power BI · IA</p>
 
-a:hover {
-  text-decoration: underline;
-}
+        <div class="social-links">
+          <a href="mailto:Pablocampos0530@gmail.com">📧 Email</a><br>
+          <a href="https://www.linkedin.com/in/pablocampos" target="_blank">🔗 LinkedIn</a><br>
+          <a href="https://github.com/Creatorpc05" target="_blank">👨‍💻 GitHub</a>
+        </div>
 
-/* Sidebar */
-.sidebar {
-  background-color: #1e1e1e;
-  padding: 20px;
-  width: 250px;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+        <h3>Temas</h3>
+        <ul>
+          <li><a href="#">Power BI</a></li>
+          <li><a href="#">Finanzas</a></li>
+          <li><a href="#">Proyectos</a></li>
+          <li><a href="#">Otros</a></li>
+        </ul>
+      </div>
+    </aside>
 
-.sidebar img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  border: 5px solid #00aaff; /* borde inicial azul */
-  transition: all 0.3s ease-in-out;
-}
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="content">
+      <h2 class="section-title">Artículos recientes</h2>
+      <p>Al hacer clic en <strong>Home</strong> verás la lista de artículos; por ahora son placeholders.</p>
+      <p>Home / Artículos</p>
 
-/* Nombre y descripción */
-.sidebar h2 {
-  margin: 15px 0 5px;
-  color: #fff;
-}
+      <h2>Sobre mí</h2>
+      <p>
+        Hola, soy <strong>Pablo Campos</strong>. Bienvenido a mi portafolio y notas técnicas inspirado en Hacknotes.
+        Tengo experiencia en finanzas, tesorería, proyectos y analítica, con enfoque en automatización y optimización de procesos.
+      </p>
 
-.sidebar p {
-  color: #bbb;
-  margin: 0 0 15px;
-  text-align: center;
-}
+      <h3>Proyectos destacados</h3>
+      <ul class="projects">
+        <li>📌 <strong>Optimización de Tesorería en ERP</strong> — Automatización de procesos financieros para mayor eficiencia.</li>
+        <li>📌 <strong>Automatización de Reportes S&OP</strong> — Dashboards en Power BI para decisiones estratégicas.</li>
+        <li>📌 <strong>Rediseño Web Corporativo</strong> — Coordinación de costos, KPIs y proyecciones para integración digital.</li>
+      </ul>
+    </main>
+  </div>
 
-/* Contenido principal */
-.content {
-  margin-left: 270px;
-  padding: 20px;
-}
-
-/* Hover efecto en la foto con animación pulse */
-.profile-pic:hover {
-  border-color: #ff005d; /* fucsia brillante */
-  box-shadow: 0 0 20px #ff005d;
-  animation: pulse 1.2s infinite; /* efecto latido */
-  transition: all 0.3s ease-in-out;
-}
-
-/* Animación de latido */
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    box-shadow: 0 0 20px #ff005d;
-  }
-  50% {
-    transform: scale(1.08);
-    box-shadow: 0 0 40px #ff337f;
-  }
-  100% {
-    transform: scale(1);
-    box-shadow: 0 0 20px #ff005d;
-  }
-}
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Pablo Campos | <a href="index.html">PC Notes</a></p>
+  </footer>
+</body>
+</html>
