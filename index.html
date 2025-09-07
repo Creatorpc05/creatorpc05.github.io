@@ -1,53 +1,81 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pablo Campos - Portafolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-  <header>
-    <div class="profile-photo">
-      <img src="foto.jpg" alt="Foto de Pablo Campos">
-    </div>
-    <h1>Pablo Campos</h1>
-    <p>Profesional en Finanzas | Tesorería | Analítica Financiera</p>
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/pablo-campos-174785174/" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="mailto:tuemail@correo.com">
-        <i class="fas fa-envelope"></i>
-      </a>
-      <a href="https://github.com/creatorpc05" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-  </header>
+/* Estilos generales */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-  <main>
-    <section id="sobre-mi">
-      <h2>Sobre mí</h2>
-      <p>
-        Soy un profesional con experiencia en tesorería, gestión financiera y optimización de procesos.
-        Apasionado por la analítica y la automatización de reportes financieros, con habilidades en liderazgo,
-        trabajo en equipo y toma de decisiones estratégicas.
-      </p>
-    </section>
+a {
+  color: #00aaff;
+  text-decoration: none;
+}
 
-    <section id="proyectos">
-      <h2>Proyectos</h2>
-      <p>
-        Aquí puedes incluir algunos de tus proyectos más destacados, reportes automatizados, modelos financieros
-        o presentaciones que hayas desarrollado.
-      </p>
-    </section>
-  </main>
+a:hover {
+  text-decoration: underline;
+}
 
-  <footer>
-    <p>© 2025 Pablo Campos. Todos los derechos reservados.</p>
-  </footer>
-</body>
-</html>
+/* Sidebar */
+.sidebar {
+  background-color: #1e1e1e;
+  padding: 20px;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: 5px solid #00aaff; /* borde inicial azul */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Nombre y descripción */
+.sidebar h2 {
+  margin: 15px 0 5px;
+  color: #fff;
+}
+
+.sidebar p {
+  color: #bbb;
+  margin: 0 0 15px;
+  text-align: center;
+}
+
+/* Contenido principal */
+.content {
+  margin-left: 270px;
+  padding: 20px;
+}
+
+/* Hover efecto en la foto con animación pulse */
+.profile-pic:hover {
+  border-color: #ff005d; /* fucsia brillante */
+  box-shadow: 0 0 20px #ff005d;
+  animation: pulse 1.2s infinite; /* efecto latido */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Animación de latido */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 20px #ff005d;
+  }
+  50% {
+    transform: scale(1.08);
+    box-shadow: 0 0 40px #ff337f;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px #ff005d;
+  }
+}
