@@ -1,167 +1,98 @@
-/* ====== GENERAL ====== */
+/* ===== Estilos generales ===== */
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #181a1b;
-  color: #e0e0e0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
   line-height: 1.6;
 }
 
-/* ====== NAVBAR ====== */
-.navbar {
-  background: #111;
-  padding: 10px 20px;
-}
-.navbar-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.navbar-left .logo {
-  color: #4db5ff;
-  font-weight: bold;
-  font-size: 18px;
-  text-decoration: none;
-}
-.navbar-right a {
-  color: #ccc;
-  margin-left: 15px;
-  text-decoration: none;
-  font-size: 15px;
-}
-.navbar-right a:hover {
-  color: #4db5ff;
-}
-
-/* ====== LAYOUT ====== */
-.container {
-  display: flex;
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 0 20px;
-}
-
-/* ====== SIDEBAR ====== */
-.sidebar {
-  width: 280px;
-  padding: 20px;
-  border-right: 1px solid #333;
-}
-.profile {
+/* ===== Encabezado ===== */
+header {
+  background: #1e3a8a; /* azul */
+  color: white;
   text-align: center;
-}
-.profile h2 {
-  margin: 15px 0 5px;
-}
-.profile p {
-  color: #aaa;
-  font-size: 14px;
+  padding: 40px 20px;
 }
 
-/* ====== FOTO PERFIL ====== */
-.profile-pic {
-  width: 160px;
-  height: 160px;
-  margin: 0 auto 15px;
+header h1 {
+  margin: 10px 0 5px;
+  font-size: 2.5em;
+}
+
+header p {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+/* ===== Foto de perfil ===== */
+.profile-photo img {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  border: 3px solid #4db5ff;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
-}
-.profile-pic img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  border: 4px solid #00aaff; /* azul inicial */
+  box-shadow: 0px 0px 15px rgba(0, 170, 255, 0.6);
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-/* ==== EFECTO HOVER LATIDO EN FOTO PERFIL ==== */
-.profile-pic:hover {
-  border-color: #ff005d; /* fucsia brillante */
-  box-shadow: 0 0 20px #ff005d;
-  animation: pulse 1.2s infinite; /* efecto latido */
+.profile-photo img:hover {
+  border-color: fuchsia; /* borde fucsia al pasar mouse */
+  box-shadow: 0px 0px 25px fuchsia;
+  animation: pulse 1.2s infinite;
 }
 
+/* Efecto de pulso */
 @keyframes pulse {
   0% {
     transform: scale(1);
-    box-shadow: 0 0 20px #ff005d;
   }
   50% {
-    transform: scale(1.08);
-    box-shadow: 0 0 40px #ff33aa;
+    transform: scale(1.05);
   }
   100% {
     transform: scale(1);
-    box-shadow: 0 0 20px #ff005d;
   }
 }
 
-/* ====== SOCIAL LINKS ====== */
-.social-links a {
-  display: block;
-  color: #4db5ff;
-  margin: 5px 0;
-  text-decoration: none;
-}
-.social-links a:hover {
-  text-decoration: underline;
+/* ===== Íconos sociales ===== */
+.social-icons {
+  margin-top: 15px;
 }
 
-/* ====== TEMAS ====== */
-.sidebar h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  color: #fff;
-}
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-.sidebar ul li {
-  margin: 8px 0;
-}
-.sidebar ul li a {
-  color: #ccc;
-  text-decoration: none;
-}
-.sidebar ul li a:hover {
-  color: #4db5ff;
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5em;
+  transition: color 0.3s;
 }
 
-/* ====== CONTENIDO PRINCIPAL ====== */
-.content {
-  flex: 1;
-  padding: 20px;
-}
-.section-title {
-  color: #4db5ff;
-}
-.projects {
-  list-style: none;
-  padding: 0;
-}
-.projects li {
-  background: #2a2d2e;
-  padding: 12px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-.projects li strong {
-  color: #fff;
+.social-icons a:hover {
+  color: fuchsia;
 }
 
-/* ====== FOOTER ====== */
-.footer {
+/* ===== Secciones ===== */
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h2 {
+  color: #1e3a8a;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+/* ===== Pie de página ===== */
+footer {
+  background: #1e3a8a;
+  color: white;
   text-align: center;
   padding: 15px;
-  background: #111;
   margin-top: 30px;
-}
-.footer a {
-  color: #4db5ff;
-  text-decoration: none;
-}
-.footer a:hover {
-  text-decoration: underline;
 }
