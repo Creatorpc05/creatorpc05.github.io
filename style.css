@@ -204,5 +204,41 @@ body {
   color: #ddd; /* gris suave para lectura */
   margin: 0;
 }
+/* ======== Estilos para un artículo individual ======== */
+.article-detail {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.article-detail h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #4db5ff;
+}
+
+.article-meta {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 1.5rem;
+}
+
+.article-content {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #ddd;
+}
+
+.article-content h2 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #4db5ff;
+}
+
+.article-content p {
+  margin-bottom: 1rem;
+}
 
 
