@@ -1,158 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Power BI — Dashboard de Ventas</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Power BI — Dashboard de Ventas | PC Notes – Portafolio Pablo Campos</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <div class="navbar-left">
+        <a href="index.html" class="logo">PC Notes</a>
+      </div>
+      <nav class="navbar-right" aria-label="Navegación principal">
+        <a href="index.html">Home</a>
+        <a href="articles.html" class="active">Artículos</a>
+        <a href="categories.html">Categorías</a>
+        <a href="tags.html">Etiquetas</a>
+        <a href="about.html">Acerca de</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
   <div class="container">
-    
-    <!-- Contenido principal -->
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="profile">
+        <div class="profile-pic">
+          <img src="assets/foto.jpg" alt="Pablo Campos">
+        </div>
+        <h2>Pablo Campos</h2>
+        <p>Finanzas · Proyectos · Power BI · IA</p>
+        <div class="social-links">
+          <a href="mailto:Pablocampos0530@gmail.com">📧 Email</a><br>
+          <a href="https://www.linkedin.com/in/pablo-campos-174785174/" target="_blank">🔗 LinkedIn</a><br>
+          <a href="https://github.com/Creatorpc05" target="_blank">👨‍💻 GitHub</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
     <main class="content">
       <article class="article-detail">
         <h1>Power BI — Dashboard de Ventas: análisis y buenas prácticas</h1>
-        <p><strong>Publicado:</strong> 2025-09-07 · 
-           <strong>Categoría:</strong> Power BI · 
-           <strong>Etiquetas:</strong> Power BI, Ventas, Dashboard, KPIs</p>
-        <p><em>Tiempo estimado de lectura: 4–6 minutos</em></p>
+        <p class="meta">
+          Publicado: 2025-09-07 · Categoría: Power BI · Etiquetas: Power BI, Ventas, Dashboard, KPIs  
+          <br>Tiempo estimado de lectura: 4–6 minutos
+        </p>
 
         <h2>Introducción</h2>
         <p>
-          Este dashboard de ventas fue diseñado para ofrecer una visión clara y accionable del desempeño comercial.
-          Su propósito es ayudar a la gerencia y áreas comerciales a identificar tendencias, detectar desviaciones
-          frente a metas y priorizar acciones por canal, producto y cliente.
+          Este dashboard de ventas fue diseñado para ofrecer una visión clara y accionable del desempeño comercial. 
+          Su propósito es ayudar a la gerencia y áreas comerciales a identificar tendencias, detectar desviaciones frente a metas 
+          y priorizar acciones por canal, producto y cliente. En este artículo explico las decisiones de diseño, las métricas clave 
+          y buenas prácticas aplicadas durante su desarrollo.
         </p>
+
+        <h2>Imagen destacada</h2>
+        <img src="assets/powerbi-ventas.png" alt="Dashboard de Ventas en Power BI mostrando KPIs, tendencia, ventas por canal y top productos" style="max-width: 100%; height: auto;">
+
+        <h2>Dashboard interactivo</h2>
+        <iframe title="Solucion Consolidado -pablo" width="100%" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiZDVjMDgyNzYtODRmMS00ODE4LWE5N2MtYmVhNjQ3ZmM5NzY3IiwidCI6Ijc5ODcxZWIxLTYwOTYtNDJiZi05OGVmLWI0ZjNlNGVmODMxOCIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
 
         <h2>Objetivos del dashboard</h2>
         <ul>
           <li>Proveer visibilidad diaria y mensual del comportamiento de ventas.</li>
           <li>Permitir segmentación por canal, producto, cliente y región.</li>
-          <li>Facilitar el seguimiento de metas y alertas tempranas.</li>
+          <li>Facilitar el seguimiento de metas y alertas tempranas (variaciones importantes).</li>
           <li>Servir como herramienta para reuniones comerciales y toma de decisiones.</li>
         </ul>
 
-        <h2>Resumen del modelo de datos</h2>
-        <p>
-          Breve descripción de la estructura utilizada:
-        </p>
-        <ul>
-          <li><strong>Tabla de hechos:</strong> Ventas (una fila por transacción / factura).</li>
-          <li><strong>Dimensiones:</strong> Fecha, Producto, Cliente, Canal, Sucursal.</li>
-          <li><strong>Medidas clave (DAX):</strong> Ventas Netas, Unidades Vendidas, Margen, Ticket Promedio, Variación %, Acumulado YTD.</li>
-        </ul>
-
-        <h2>Visualizaciones principales</h2>
-        <ul>
-          <li><strong>KPIs superiores:</strong> Ventas Netas, Margen, Ticket Promedio, Crecimiento %.</li>
-          <li><strong>Tendencia temporal:</strong> gráfico de líneas diario/mensual.</li>
-          <li><strong>Ventas por canal/producto:</strong> barras apiladas con filtros.</li>
-          <li><strong>Mapa:</strong> desempeño por región.</li>
-          <li><strong>Top productos / clientes:</strong> tabla con orden y filtros.</li>
-        </ul>
-
-        <!-- Imagen destacada -->
-        <figure>
-          <img src="https://github.com/Creatorpc05/creatorpc05.github.io/blob/main/assets/powerbi-ventas.png?raw=true" 
-               alt="Dashboard de Ventas en Power BI mostrando KPIs, tendencias y ventas" 
-               style="max-width:500px; width:100%; display:block; margin:auto;">
-          <figcaption>Imagen destacada del dashboard en Power BI</figcaption>
-        </figure>
-
-        <h2>Análisis por secciones</h2>
-        <h3>KPIs</h3>
-        <p>
-          Qué mostrar: Ventas netas, Margen, Ticket Promedio, Variación %.
-          Insight tipo: si Ventas Netas suben pero Margen cae → revisar descuentos o mix de producto.
-        </p>
-
-        <h3>Tendencia temporal</h3>
-        <p>
-          Evolución diaria/mensual.  
-          Insight: identificar picos estacionales o caídas tras promociones.
-        </p>
-
-        <h3>Ventas por canal / producto</h3>
-        <p>
-          Comparación entre canales y líneas de producto.  
-          Insight: si un canal crece en unidades pero cae en ticket → revisar precios.
-        </p>
-
-        <h3>Top clientes / productos</h3>
-        <p>
-          Clientes que concentran mayor venta y su evolución.  
-          Insight: detectar concentración de riesgo por pocos clientes.
-        </p>
-
-        <h2>Buenas prácticas aplicadas</h2>
-        <ul>
-          <li>Jerarquía visual clara: KPIs arriba, detalle abajo.</li>
-          <li>Colores consistentes y accesibles.</li>
-          <li>Filtros globales y slicers bien posicionados.</li>
-          <li>Modelo de datos simplificado y optimizado.</li>
-        </ul>
-
-        <h2>Ejemplo de medida DAX</h2>
-<pre>
-Ventas Netas = SUM(Ventas[MontoNeto])
-
-Ventas YoY % = 
-VAR VentasActual = [Ventas Netas]
-VAR VentasPrevio = CALCULATE([Ventas Netas], SAMEPERIODLASTYEAR('Fecha'[Date]))
-RETURN
-DIVIDE(VentasActual - VentasPrevio, VentasPrevio, 0)
-</pre>
-
         <h2>Conclusiones</h2>
         <p>
-          El dashboard proporciona una vista unificada y accionable para áreas comerciales. Permite detectar rápidamente caídas de desempeño, priorizar promociones y entender la contribución por canal.  
-          Como siguiente paso recomiendo automatizar la carga y programar revisiones semanales.
+          El dashboard proporciona una vista unificada y accionable para áreas comerciales: permite detectar rápidamente caídas 
+          de desempeño, priorizar productos/promociones y entender la contribución por canal. Como siguiente paso recomiendo automatizar 
+          la carga y programar revisiones semanales con los stakeholders.
         </p>
 
-        <h2>Dashboard interactivo</h2>
-        <p>Haz clic en el enlace para verlo en pantalla completa o interactúa directamente aquí:</p>
-
-        <!-- Iframe Power BI -->
-        <iframe title="Solucion Consolidado -pablo" width="600" height="373.5" 
-                src="https://app.powerbi.com/view?r=eyJrIjoiZDVjMDgyNzYtODRmMS00ODE4LWE5N2MtYmVhNjQ3ZmM5NzY3IiwidCI6Ijc5ODcxZWIxLTYwOTYtNDJiZi05OGVmLWI0ZjNlNGVmODMxOCIsImMiOjR9" 
-                frameborder="0" allowFullScreen="true"
-                style="display:block; margin:auto;">
-        </iframe>
-
+        <h2>Cómo interactuar</h2>
         <p>
-          📩 Para consultas o colaboración sobre este dashboard:  
-          <a href="mailto:Pablocampos0530@gmail.com">Pablocampos0530@gmail.com</a>
+          👉 <a href="https://app.powerbi.com/view?r=eyJrIjoiZDVjMDgyNzYtODRmMS00ODE4LWE5N2MtYmVhNjQ3ZmM5NzY3IiwidCI6Ijc5ODcxZWIxLTYwOTYtNDJiZi05OGVmLWI0ZjNlNGVmODMxOCIsImMiOjR9" target="_blank">Haz clic aquí para ver el dashboard interactivo en Power BI</a>
         </p>
       </article>
     </main>
-
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <div class="profile">
-        <img src="assets/profile.jpg" alt="Foto de perfil">
-        <h2>Pablo Campos</h2>
-        <p>Finanzas · Tesorería · Analítica</p>
-      </div>
-      <div class="social">
-        <h3>Conecta conmigo</h3>
-        <ul>
-          <li><a href="https://www.linkedin.com">LinkedIn</a></li>
-          <li><a href="https://github.com">GitHub</a></li>
-          <li><a href="mailto:Pablocampos0530@gmail.com">Email</a></li>
-        </ul>
-      </div>
-      <div class="topics">
-        <h3>Temas</h3>
-        <ul>
-          <li>Power BI</li>
-          <li>Finanzas</li>
-          <li>Tesorería</li>
-          <li>Automatización</li>
-        </ul>
-      </div>
-    </aside>
-
   </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Pablo Campos | <a href="index.html">PC Notes</a></p>
+  </footer>
 </body>
 </html>
