@@ -1,92 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Artículos | PC Notes – Portafolio Pablo Campos</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artículos</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="navbar-inner">
-      <div class="navbar-left">
-        <a href="index.html" class="logo">PC Notes</a>
-      </div>
-      <nav class="navbar-right" aria-label="Navegación principal">
-        <a href="index.html">Home</a>
-        <a href="articles.html" class="active">Artículos</a>
-        <a href="categories.html">Categorías</a>
-        <a href="tags.html">Etiquetas</a>
-        <a href="about.html">Acerca de</a>
-      </nav>
-    </div>
+
+  <header>
+    <h1>Mis Artículos</h1>
   </header>
 
-  <!-- MAIN CONTENT -->
-  <div class="container">
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
-      <div class="profile">
-        <div class="profile-pic">
-          <img src="assets/foto.jpg" alt="Pablo Campos">
-        </div>
-        <h2>Pablo Campos</h2>
-        <p>Finanzas · Proyectos · Power BI · IA</p>
+  <!-- 📌 Lista de artículos -->
+  <main>
+    <ul class="article-list">
+      <li>
+        <a href="#articulo1" class="article-link">
+          Power BI — Dashboard de Ventas: análisis y buenas prácticas
+        </a>
+      </li>
+    </ul>
 
-        <div class="social-links">
-          <a href="mailto:Pablocampos0530@gmail.com">📧 Email</a><br>
-          <a href="https://www.linkedin.com/in/pablo-campos-174785174/" target="_blank">🔗 LinkedIn</a><br>
-          <a href="https://github.com/Creatorpc05" target="_blank">👨‍💻 GitHub</a>
-        </div>
+    <!-- 📌 Contenido del artículo oculto -->
+    <section id="articulo1" class="article-content" style="display:none;">
+      <h2>Power BI — Dashboard de Ventas: análisis y buenas prácticas</h2>
 
-        <h3>Temas</h3>
-        <ul>
-          <li><a href="categories.html#powerbi">Power BI</a></li>
-          <li><a href="categories.html#finanzas">Finanzas</a></li>
-          <li><a href="categories.html#proyectos">Proyectos</a></li>
-          <li><a href="categories.html#otros">Otros</a></li>
-        </ul>
-      </div>
-    </aside>
+      <p>
+        Este dashboard fue diseñado en Power BI para centralizar la información de ventas y brindar una visión clara a la gerencia. 
+        A través de indicadores clave y visualizaciones interactivas, permite un análisis profundo de los resultados.
+      </p>
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <main class="content">
-      <h2 class="section-title">Artículos</h2>
+      <h3>📊 Objetivo</h3>
+      <p>
+        El objetivo principal es optimizar la toma de decisiones estratégicas, facilitando la detección de tendencias, 
+        oportunidades de crecimiento y posibles riesgos.
+      </p>
 
-      <p>Home / Artículos</p>
-      <p>Aquí están los artículos publicados. Haz clic en el título para ver el artículo completo.</p>
+      <h3>📷 Vista previa</h3>
+      <img src="assets/powerbi-ventas.png" alt="Dashboard Power BI Ventas" style="max-width:100%; margin:20px 0;">
 
-      <!-- LISTA DE ARTÍCULOS (estilo HackNotes: título azul + resumen) -->
-      <section class="posts">
-        <article class="post-item">
-          <h3>
-            <a href="powerbi-dashboard.html" class="post-title">
-              Power BI — Dashboard de Ventas: análisis y buenas prácticas
-            </a>
-          </h3>
-          <small>Publicado: 2025-09-07 · Categoría: Power BI · Etiquetas: Power BI, Ventas</small>
-          <p>Resumen: Caso práctico de un dashboard de ventas — objetivos, métricas clave, estructura del modelo de datos y pantallas principales.</p>
-        </article>
+      <h3>⚡ Indicadores principales</h3>
+      <ul>
+        <li>Ingresos totales.</li>
+        <li>Crecimiento porcentual vs. periodo anterior.</li>
+        <li>Distribución de ventas por categoría.</li>
+        <li>Rentabilidad por línea de negocio.</li>
+        <li>Tendencia de clientes activos.</li>
+      </ul>
 
-        <hr>
+      <h3>🌐 Dashboard interactivo</h3>
+      <p>
+        Aquí puedes ver el dashboard y navegar entre sus pestañas:
+      </p>
 
-        <article class="post-item">
-          <h3>
-            <a href="#" class="post-title">
-              Título de artículo (placeholder)
-            </a>
-          </h3>
-          <small>Publicado: 2025-??-?? · Categoría: Otros · Etiquetas: placeholder</small>
-          <p>Resumen: Este es un ejemplo de cómo aparecerá otro artículo. Reemplázalo cuando estés listo.</p>
-        </article>
-      </section>
-    </main>
-  </div>
+      <iframe title="Dashboard de Ventas - Pablo" width="800" height="450"
+        src="https://app.powerbi.com/view?r=eyJrIjoiZDVjMDgyNzYtODRmMS00ODE4LWE5N2MtYmVhNjQ3ZmM5NzY3IiwidCI6Ijc5ODcxZWIxLTYwOTYtNDJiZi05OGVmLWI0ZjNlNGVmODMxOCIsImMiOjR9"
+        frameborder="0" allowFullScreen="true"></iframe>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>© 2025 Pablo Campos | <a href="index.html">PC Notes</a></p>
-  </footer>
+      <p>
+        👉 Si quieres verlo en una ventana completa, 
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiZDVjMDgyNzYtODRmMS00ODE4LWE5N2MtYmVhNjQ3ZmM5NzY3IiwidCI6Ijc5ODcxZWIxLTYwOTYtNDJiZi05OGVmLWI0ZjNlNGVmODMxOCIsImMiOjR9" target="_blank">
+          haz clic aquí
+        </a>.
+      </p>
+    </section>
+  </main>
+
+  <script>
+    // Mostrar artículo al hacer clic en el título
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelectorAll("section").forEach(s => s.style.display = "none");
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) target.style.display = "block";
+      });
+    });
+  </script>
+
 </body>
 </html>
