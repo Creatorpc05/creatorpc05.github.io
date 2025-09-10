@@ -165,39 +165,44 @@ body {
 .footer a:hover {
   text-decoration: underline;
 }
-/* ===== Estilo HackNotes para lista de artículos (títulos azules + extracto) ===== */
+/* ======== Estilos para la lista de artículos ======== */
+.articles-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.article-item {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #2c2c2c; /* línea gris oscura de separación */
+}
 
 .post-title {
-  color: #4db5ff; /* azul claro que usamos en el site */
-  text-decoration: none;
+  display: block;
+  font-size: 1.5rem;
   font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #4db5ff !important; /* azul principal */
+  text-decoration: none;
 }
+
 .post-title:hover {
-  color: #1e6fb2; /* azul más oscuro al pasar el mouse */
+  color: #1e6fb2 !important; /* azul más oscuro al pasar el mouse */
   text-decoration: underline;
 }
 
-.post-item {
-  margin-bottom: 1.6rem;
+.post-meta {
+  font-size: 0.85rem;
+  color: #aaa; /* gris claro */
+  margin-bottom: 0.75rem;
 }
 
-.post-item small {
-  color: #9aa0a6;
-  display: block;
-  margin: 6px 0;
-  font-size: 0.92rem;
-}
-
-.post-item p {
-  color: #cfcfcf;
+.post-excerpt {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd; /* gris suave para lectura */
   margin: 0;
-  line-height: 1.5;
 }
 
-/* línea divisoria entre artículos */
-.post-item + hr {
-  border: 0;
-  border-top: 1px solid #333;
-  margin: 1.5rem 0;
-}
 
