@@ -25,7 +25,7 @@
 
   <!-- MAIN CONTENT -->
   <div class="container">
-    <!-- SIDEBAR (igual que en el Home) -->
+    <!-- SIDEBAR -->
     <aside class="sidebar">
       <div class="profile">
         <div class="profile-pic">
@@ -42,10 +42,10 @@
 
         <h3>Temas</h3>
         <ul>
-          <li><a href="#">Power BI</a></li>
-          <li><a href="#">Finanzas</a></li>
-          <li><a href="#">Proyectos</a></li>
-          <li><a href="#">Otros</a></li>
+          <li><a href="categories.html#powerbi">Power BI</a></li>
+          <li><a href="categories.html#finanzas">Finanzas</a></li>
+          <li><a href="categories.html#proyectos">Proyectos</a></li>
+          <li><a href="categories.html#otros">Otros</a></li>
         </ul>
       </div>
     </aside>
@@ -55,25 +55,32 @@
       <h2 class="section-title">Artículos</h2>
 
       <p>Home / Artículos</p>
+      <p>Aquí están los artículos publicados. Haz clic en el título para ver el artículo completo.</p>
 
-      <p class="intro">Aquí están los artículos publicados. Haz clic en el título para ver el artículo completo.</p>
+      <!-- LISTA DE ARTÍCULOS (estilo HackNotes: título azul + resumen) -->
+      <section class="posts">
+        <article class="post-item">
+          <h3>
+            <a href="powerbi-dashboard.html" class="post-title">
+              Power BI — Dashboard de Ventas: análisis y buenas prácticas
+            </a>
+          </h3>
+          <small>Publicado: 2025-09-07 · Categoría: Power BI · Etiquetas: Power BI, Ventas</small>
+          <p>Resumen: Caso práctico de un dashboard de ventas — objetivos, métricas clave, estructura del modelo de datos y pantallas principales.</p>
+        </article>
 
-      <ul class="article-list">
-        <!-- Artículo 1: Power BI - Dashboard de ventas -->
-        <li class="article-item">
-          <a href="article-power-bi-ventas.html">Power BI — Dashboard de Ventas: análisis y buenas prácticas</a>
-          <div class="meta">Publicado: 2025-09-07 · Categoría: Power BI · Etiquetas: Power BI, Ventas</div>
-          <p class="excerpt">Resumen: Caso práctico de un dashboard de ventas — objetivos, métricas clave, estructura del modelo de datos y pantallas principales.</p>
-        </li>
+        <hr>
 
-        <!-- Artículo 2: placeholder -->
-        <li class="article-item">
-          <a href="#">Título de artículo (placeholder)</a>
-          <div class="meta">Publicado: 2025-??-?? · Categoría: Otros · Etiquetas: placeholder</div>
-          <p class="excerpt">Resumen: Este es un ejemplo de cómo aparecerá otro artículo. Reemplázalo cuando estés listo.</p>
-        </li>
-      </ul>
-
+        <article class="post-item">
+          <h3>
+            <a href="#" class="post-title">
+              Título de artículo (placeholder)
+            </a>
+          </h3>
+          <small>Publicado: 2025-??-?? · Categoría: Otros · Etiquetas: placeholder</small>
+          <p>Resumen: Este es un ejemplo de cómo aparecerá otro artículo. Reemplázalo cuando estés listo.</p>
+        </article>
+      </section>
     </main>
   </div>
 
