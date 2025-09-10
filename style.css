@@ -165,56 +165,39 @@ body {
 .footer a:hover {
   text-decoration: underline;
 }
-/* ===== Estilos para listado de artículos ===== */
-.article-list {
-  list-style: none;
-  padding: 0;
-  margin-top: 10px;
-}
-.article-item {
-  background: #2a2d2e;
-  padding: 14px;
-  border-radius: 8px;
-  margin-bottom: 12px;
-  transition: transform .12s ease, box-shadow .12s ease;
-}
-.article-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
-}
-.article-item a {
-  font-weight: 700;
-  color: #ff66a3; /* título del artículo en color llamativo */
-  text-decoration: none;
-  font-size: 1.05rem;
-}
-.article-item .meta {
-  color: #9aa0a6;
-  font-size: 0.9rem;
-  margin-top: 6px;
-  margin-bottom: 8px;
-}
-.article-item .excerpt {
-  color: #cfcfcf;
-  margin: 0;
-}
+/* ===== Estilo HackNotes para lista de artículos (títulos azules + extracto) ===== */
+
 .post-title {
-  font-size: 1.6rem;
-  color: #ffffff;
-  margin-bottom: 8px;
+  color: #4db5ff; /* azul claro que usamos en el site */
+  text-decoration: none;
+  font-weight: 700;
 }
-.post .meta {
-  color: #9aa0a6;
-  margin-bottom: 1rem;
-}
-.post h2 {
-  color: #dfe9ef;
+.post-title:hover {
+  color: #1e6fb2; /* azul más oscuro al pasar el mouse */
+  text-decoration: underline;
 }
 
-/* Asegura que la lista deje de mostrar bullets por defecto en móviles también */
-.article-list, .article-list li {
+.post-item {
+  margin-bottom: 1.6rem;
+}
+
+.post-item small {
+  color: #9aa0a6;
+  display: block;
+  margin: 6px 0;
+  font-size: 0.92rem;
+}
+
+.post-item p {
+  color: #cfcfcf;
   margin: 0;
-  padding: 0;
-  list-style: none;
+  line-height: 1.5;
+}
+
+/* línea divisoria entre artículos */
+.post-item + hr {
+  border: 0;
+  border-top: 1px solid #333;
+  margin: 1.5rem 0;
 }
 
