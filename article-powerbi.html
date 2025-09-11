@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Power BI — Dashboard de Ventas | PC Notes – Portafolio Pablo Campos</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Power BI — Dashboard de Ventas | PC Notes</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- NAVBAR -->
@@ -33,57 +33,80 @@
         </div>
         <h2>Pablo Campos</h2>
         <p>Finanzas · Proyectos · Power BI · IA</p>
+
         <div class="social-links">
           <a href="mailto:Pablocampos0530@gmail.com">📧 Email</a><br>
           <a href="https://www.linkedin.com/in/pablo-campos-174785174/" target="_blank">🔗 LinkedIn</a><br>
           <a href="https://github.com/Creatorpc05" target="_blank">👨‍💻 GitHub</a>
         </div>
+
+        <h3>Temas</h3>
+        <ul>
+          <li><a href="#">Power BI</a></li>
+          <li><a href="#">Finanzas</a></li>
+          <li><a href="#">Proyectos</a></li>
+          <li><a href="#">Otros</a></li>
+        </ul>
       </div>
     </aside>
 
     <!-- CONTENIDO PRINCIPAL -->
     <main class="content">
-      <article class="article-detail">
-        <h1>Power BI — Dashboard de Ventas: análisis y buenas prácticas</h1>
-        <p class="meta">
-          Publicado: 2025-09-07 · Categoría: Power BI · Etiquetas: Power BI, Ventas, Dashboard, KPIs  
-          <br>Tiempo estimado de lectura: 4–6 minutos
-        </p>
+      <h2 class="section-title">Power BI — Dashboard de Ventas: análisis y buenas prácticas</h2>
 
-        <h2>Introducción</h2>
-        <p>
-          Este dashboard de ventas fue diseñado para ofrecer una visión clara y accionable del desempeño comercial. 
-          Su propósito es ayudar a la gerencia y áreas comerciales a identificar tendencias, detectar desviaciones frente a metas 
-          y priorizar acciones por canal, producto y cliente. En este artículo explico las decisiones de diseño, las métricas clave 
-          y buenas prácticas aplicadas durante su desarrollo.
-        </p>
+      <p class="article-meta">Publicado: 2025-09-07 · Categoría: Power BI · Etiquetas: Power BI, Ventas, Dashboard, KPIs · Lectura: 4–6 min</p>
 
-        <h2>Imagen destacada</h2>
-        <img src="assets/powerbi-ventas.png" alt="Dashboard de Ventas en Power BI mostrando KPIs, tendencia, ventas por canal y top productos" style="max-width: 100%; height: auto;">
+      <!-- Imagen destacada (pequeña) -->
+      <img src="assets/powerbi-ventas.png" alt="Dashboard de Ventas en Power BI" class="featured-img">
 
-        <h2>Dashboard interactivo</h2>
-        <iframe title="Solucion Consolidado -pablo" width="100%" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiZDVjMDgyNzYtODRmMS00ODE4LWE5N2MtYmVhNjQ3ZmM5NzY3IiwidCI6Ijc5ODcxZWIxLTYwOTYtNDJiZi05OGVmLWI0ZjNlNGVmODMxOCIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+      <div class="article-content">
+        <h3>Introducción</h3>
+        <p>Este dashboard de ventas fue diseñado para ofrecer una visión clara y accionable del desempeño comercial. Su propósito es ayudar a la gerencia y áreas comerciales a identificar tendencias, detectar desviaciones frente a metas y priorizar acciones por canal, producto y cliente. En este artículo explico las decisiones de diseño, las métricas clave y buenas prácticas aplicadas durante su desarrollo.</p>
 
-        <h2>Objetivos del dashboard</h2>
+        <h3>Objetivos del dashboard</h3>
         <ul>
           <li>Proveer visibilidad diaria y mensual del comportamiento de ventas.</li>
           <li>Permitir segmentación por canal, producto, cliente y región.</li>
-          <li>Facilitar el seguimiento de metas y alertas tempranas (variaciones importantes).</li>
+          <li>Facilitar el seguimiento de metas y alertas tempranas.</li>
           <li>Servir como herramienta para reuniones comerciales y toma de decisiones.</li>
         </ul>
 
-        <h2>Conclusiones</h2>
-        <p>
-          El dashboard proporciona una vista unificada y accionable para áreas comerciales: permite detectar rápidamente caídas 
-          de desempeño, priorizar productos/promociones y entender la contribución por canal. Como siguiente paso recomiendo automatizar 
-          la carga y programar revisiones semanales con los stakeholders.
-        </p>
+        <h3>Resumen del modelo de datos</h3>
+        <p>Tabla de hechos: <em>Ventas</em>. Dimensiones: Fecha, Producto, Cliente, Canal, Sucursal. Medidas clave (DAX): Ventas Netas, Unidades Vendidas, Margen, Ticket Promedio, Variación % vs periodo anterior, Acumulado YTD.</p>
 
-        <h2>Cómo interactuar</h2>
-        <p>
-          👉 <a href="https://app.powerbi.com/view?r=eyJrIjoiZDVjMDgyNzYtODRmMS00ODE4LWE5N2MtYmVhNjQ3ZmM5NzY3IiwidCI6Ijc5ODcxZWIxLTYwOTYtNDJiZi05OGVmLWI0ZjNlNGVmODMxOCIsImMiOjR9" target="_blank">Haz clic aquí para ver el dashboard interactivo en Power BI</a>
-        </p>
-      </article>
+        <h3>Visualizaciones principales</h3>
+        <ul>
+          <li><strong>KPIs</strong> — Ventas Netas, Margen, Ticket Promedio, Crecimiento %.</li>
+          <li><strong>Tendencia temporal</strong> — gráfico de líneas mensual.</li>
+          <li><strong>Ventas por canal/producto</strong> — barras apiladas.</li>
+          <li><strong>Mapa</strong> — desempeño por región.</li>
+          <li><strong>Top productos/clientes</strong> — tablas filtrables.</li>
+        </ul>
+
+        <h3>Análisis por secciones</h3>
+        <p><strong>KPIs:</strong> si Ventas Netas suben pero Margen cae → revisar descuentos o mix de producto.</p>
+
+        <h3>Buenas prácticas</h3>
+        <ul>
+          <li>Jerarquía visual: KPIs arriba, detalle abajo.</li>
+          <li>Interactividad: filtros globales y slicers bien posicionados.</li>
+          <li>Rendimiento: modelo simplificado, medidas precalculadas.</li>
+        </ul>
+
+        <h3>Recursos</h3>
+        <p>Captura completa del dashboard: <code>assets/powerbi-ventas.png</code>. Contacto: Pablocampos0530@gmail.com</p>
+      </div>
+
+      <!-- Botón para cargar iframe (no carga por defecto) -->
+      <p>
+        <button id="toggle-embed" class="btn">Mostrar dashboard interactivo</button>
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiZDVjMDgyNzYtODRmMS00ODE4LWE5N2MtYmVhNjQ3ZmM5NzY3IiwidCI6Ijc5ODcxZWIxLTYwOTYtNDJiZi05OGVmLWI0ZjNlNGVmODMxOCIsImMiOjR9" target="_blank" rel="noopener">Abrir en Power BI (pestaña nueva)</a>
+      </p>
+
+      <div id="embed-wrap" class="embed-container" style="display:none;">
+        <iframe title="Solucion Consolidado -pablo" src="https://app.powerbi.com/view?r=eyJrIjoiZDVjMDgyNzYtODRmMS00ODE4LWE5N2MtYmVhNjQ3ZmM5NzY3IiwidCI6Ijc5ODcxZWIxLTYwOTYtNDJiZi05OGVmLWI0ZjNlNGVmODMxOCIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+      </div>
+
     </main>
   </div>
 
@@ -91,5 +114,19 @@
   <footer class="footer">
     <p>© 2025 Pablo Campos | <a href="index.html">PC Notes</a></p>
   </footer>
+
+  <script>
+    document.getElementById('toggle-embed').addEventListener('click', function () {
+      var wrap = document.getElementById('embed-wrap');
+      if (wrap.style.display === 'none' || wrap.style.display === '') {
+        wrap.style.display = 'block';
+        this.textContent = 'Ocultar dashboard interactivo';
+        window.scrollTo({ top: wrap.offsetTop - 20, behavior: 'smooth' });
+      } else {
+        wrap.style.display = 'none';
+        this.textContent = 'Mostrar dashboard interactivo';
+      }
+    });
+  </script>
 </body>
 </html>
