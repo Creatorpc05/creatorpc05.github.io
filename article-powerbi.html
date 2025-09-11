@@ -4,15 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Power BI — Dashboard de Ventas</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    
     <!-- Sidebar -->
     <aside class="sidebar">
-      <h2>Mi Portafolio</h2>
-      <nav>
+      <div class="profile">
+        <img src="tu-foto.jpg" alt="Pablo Campos" class="profile-img">
+        <h2>Pablo Campos</h2>
+        <p>Finanzas · Proyectos · Power BI</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/tuusuario" target="_blank">🔗 LinkedIn</a><br>
+          <a href="https://github.com/creatorpc05" target="_blank">💻 GitHub</a><br>
+          <a href="mailto:pablocampos07b@gmail.com">✉️ Email</a>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <h3>Menú</h3>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="articles.html">Artículos</a></li>
@@ -21,58 +31,83 @@
           <li><a href="about.html">Acerca de</a></li>
         </ul>
       </nav>
+
+      <div class="topics">
+        <h3>Temas</h3>
+        <ul>
+          <li>Power BI</li>
+          <li>Tesorería</li>
+          <li>Finanzas</li>
+          <li>Automatización</li>
+        </ul>
+      </div>
     </aside>
 
-    <!-- Contenido del artículo -->
+    <!-- Contenido principal -->
     <main class="content">
-      <article class="article-detail">
+      <article class="post">
         <h1>Power BI — Dashboard de Ventas: análisis y buenas prácticas</h1>
+        <p><em>Publicado: 2025-09-07 | Categoría: Power BI | Etiquetas: Ventas, Dashboard, KPIs, Buenas prácticas</em></p>
+        
+        <img src="img/dashboard-powerbi.png" alt="Dashboard en Power BI" class="article-img">
 
-        <img src="images/powerbi-dashboard.png" alt="Dashboard en Power BI" class="article-image">
-
+        <h2>Introducción</h2>
         <p>
-          En este artículo comparto un dashboard de ventas desarrollado en Power BI, mostrando cómo convertir datos en información estratégica para la toma de decisiones. 
-          La visualización y análisis de datos es clave en cualquier organización, y Power BI se ha convertido en una herramienta fundamental para esta tarea.
+          Este dashboard de ventas fue diseñado para ofrecer una visión clara y accionable del desempeño comercial. 
+          Su propósito es ayudar a los gerentes y analistas a entender tendencias, detectar desviaciones frente a metas y priorizar acciones comerciales. 
+          Durante el desarrollo se aplicaron criterios de diseño, las métricas clave y buenas prácticas específicas.
         </p>
 
-        <h2>Objetivo del Dashboard</h2>
-        <p>
-          El propósito principal es monitorear las ventas de la compañía, identificando tendencias, comparando el rendimiento contra metas y detectando oportunidades de mejora.
-        </p>
-
-        <h2>Indicadores Clave (KPIs)</h2>
+        <h2>Objetivos del dashboard</h2>
         <ul>
-          <li>Ventas totales</li>
-          <li>Margen de utilidad</li>
-          <li>Crecimiento vs. periodo anterior</li>
-          <li>Productos más vendidos</li>
-          <li>Regiones con mejor desempeño</li>
+          <li>Proveer visibilidad clara y resumida del comportamiento de ventas.</li>
+          <li>Permitir segmentación por canal, producto, cliente y región.</li>
+          <li>Facilitar el seguimiento de metas comerciales y KPIs clave.</li>
+          <li>Brindar contexto histórico para decisiones estratégicas.</li>
         </ul>
 
-        <h2>Buenas Prácticas Utilizadas</h2>
+        <h2>Resumen del modelo de datos</h2>
         <p>
-          Para la construcción del dashboard se aplicaron principios de diseño como:
+          Tablas de hechos: Ventas.  
+          Dimensiones: Fecha, Producto, Cliente, Canal, Segmento.  
+          Métricas clave (DAX): Ventas Netas, Margen, Ticket Promedio, Variación % vs. período anterior, Acumulado YTD.
         </p>
+
+        <h2>Visualizaciones principales</h2>
         <ul>
-          <li>Uso de colores consistentes y corporativos</li>
-          <li>Gráficos claros y fáciles de interpretar</li>
-          <li>Filtros interactivos para explorar la información</li>
-          <li>Organización jerárquica de la información</li>
+          <li>KPI cards — Ventas Netas, Margen, Ticket Promedio.</li>
+          <li>Tendencias comparativas — Gráfico de líneas.</li>
+          <li>Mapa por zona/ciudad — Ventas geolocalizadas.</li>
+          <li>Barras — desempeño por categoría.</li>
+          <li>Top productos/clientes — análisis detallado.</li>
         </ul>
 
-        <h2>Beneficios</h2>
+        <h2>Análisis por secciones</h2>
         <p>
-          Con este dashboard, los equipos comerciales pueden identificar rápidamente qué productos o regiones impulsan las ventas, así como anticipar riesgos en zonas de bajo rendimiento. 
-          Esto facilita la toma de decisiones estratégicas en tiempo real.
+          KPI de Ventas Netas sobre Margen: caso donde el margen cae — revisar descuentos en mix de productos.
         </p>
 
-        <h2>Conclusión</h2>
+        <h2>Buenas prácticas utilizadas</h2>
+        <ul>
+          <li>Jerarquías visuales: KPIs arriba, detalle abajo.</li>
+          <li>Interactividad: filtros globales y locales.</li>
+          <li>Normalización: escalas comparables, medidas ajustadas.</li>
+          <li>Diseño minimalista: evitar sobrecargar de gráficos.</li>
+        </ul>
+
+        <h2>Recursos</h2>
         <p>
-          Power BI es una herramienta poderosa que, aplicada con buenas prácticas de visualización, permite transformar los datos en un activo estratégico para la organización. 
-          Este dashboard es un ejemplo de cómo estructurar la información para apoyar la gestión comercial.
+          Carpeta completa del dashboard: <code>assets/powerbi-ventas</code><br>
+          Contacto: <a href="mailto:pablocampos07b@gmail.com">pablocampos07b@gmail.com</a>
         </p>
+
+        <a href="assets/powerbi-ventas/dashboard.pbix" class="btn">Mostrar dashboard interactivo</a>
       </article>
     </main>
   </div>
+
+  <footer>
+    <p>© 2025 Pablo Campos | PC Notes</p>
+  </footer>
 </body>
 </html>
