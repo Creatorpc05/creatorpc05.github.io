@@ -2,122 +2,77 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Power BI — Dashboard de Ventas</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="container">
+  <div class="container">
     
     <!-- Sidebar -->
-    <div id="sidebar">
-      <h1>PC Notes</h1>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="articles.html">Artículos</a></li>
-        <li><a href="categories.html">Categorías</a></li>
-        <li><a href="tags.html">Etiquetas</a></li>
-        <li><a href="about.html">Acerca de</a></li>
-      </ul>
+    <aside class="sidebar">
+      <h2>Mi Portafolio</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="articles.html">Artículos</a></li>
+          <li><a href="categories.html">Categorías</a></li>
+          <li><a href="tags.html">Etiquetas</a></li>
+          <li><a href="about.html">Acerca de</a></li>
+        </ul>
+      </nav>
+    </aside>
 
-      <img src="assets/profile.png" alt="Pablo Campos" style="width:100px;border-radius:50%;">
-      <h2>Pablo Campos</h2>
-      <p>Finanzas · Proyectos · Power BI</p>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/creatorpc05" target="_blank">GitHub</a></li>
-        <li><a href="mailto:pablocampos0530@gmail.com">Email</a></li>
-      </ul>
+    <!-- Contenido del artículo -->
+    <main class="content">
+      <article class="article-detail">
+        <h1>Power BI — Dashboard de Ventas: análisis y buenas prácticas</h1>
 
-      <h3>Temas</h3>
-      <ul>
-        <li><a href="categories.html#powerbi">Power BI</a></li>
-        <li><a href="categories.html#tesoreria">Tesorería</a></li>
-        <li><a href="categories.html#finanzas">Finanzas</a></li>
-        <li><a href="categories.html#automatizacion">Automatización</a></li>
-      </ul>
-    </div>
+        <img src="images/powerbi-dashboard.png" alt="Dashboard en Power BI" class="article-image">
 
-    <!-- Contenido -->
-    <div id="content">
-      <h1>Power BI — Dashboard de Ventas: análisis y buenas prácticas</h1>
-      <p><strong>Publicado:</strong> 2025-09-07 · <strong>Categoría:</strong> Power BI · 
-         <strong>Etiquetas:</strong> Power BI, Ventas, Dashboard, KPIs</p>
-      <p><em>Tiempo estimado de lectura: 4–6 minutos</em></p>
+        <p>
+          En este artículo comparto un dashboard de ventas desarrollado en Power BI, mostrando cómo convertir datos en información estratégica para la toma de decisiones. 
+          La visualización y análisis de datos es clave en cualquier organización, y Power BI se ha convertido en una herramienta fundamental para esta tarea.
+        </p>
 
-      <h2>Introducción</h2>
-      <p>Este dashboard de ventas fue diseñado para ofrecer una visión clara y accionable del desempeño comercial...</p>
+        <h2>Objetivo del Dashboard</h2>
+        <p>
+          El propósito principal es monitorear las ventas de la compañía, identificando tendencias, comparando el rendimiento contra metas y detectando oportunidades de mejora.
+        </p>
 
-      <h2>Objetivos del dashboard</h2>
-      <ul>
-        <li>Proveer visibilidad diaria y mensual del comportamiento de ventas.</li>
-        <li>Permitir segmentación por canal, producto, cliente y región.</li>
-        <li>Facilitar el seguimiento de metas y alertas tempranas.</li>
-        <li>Servir como herramienta para reuniones comerciales y toma de decisiones.</li>
-      </ul>
+        <h2>Indicadores Clave (KPIs)</h2>
+        <ul>
+          <li>Ventas totales</li>
+          <li>Margen de utilidad</li>
+          <li>Crecimiento vs. periodo anterior</li>
+          <li>Productos más vendidos</li>
+          <li>Regiones con mejor desempeño</li>
+        </ul>
 
-      <h2>Resumen del modelo de datos</h2>
-      <ul>
-        <li><strong>Tabla de hechos:</strong> Ventas.</li>
-        <li><strong>Dimensiones:</strong> Fecha, Producto, Cliente, Canal, Sucursal.</li>
-        <li><strong>Medidas clave:</strong> Ventas Netas, Unidades Vendidas, Margen, Ticket Promedio, Variación %, Acumulado YTD.</li>
-      </ul>
+        <h2>Buenas Prácticas Utilizadas</h2>
+        <p>
+          Para la construcción del dashboard se aplicaron principios de diseño como:
+        </p>
+        <ul>
+          <li>Uso de colores consistentes y corporativos</li>
+          <li>Gráficos claros y fáciles de interpretar</li>
+          <li>Filtros interactivos para explorar la información</li>
+          <li>Organización jerárquica de la información</li>
+        </ul>
 
-      <h2>Visualizaciones principales</h2>
-      <ul>
-        <li>KPIs superiores — tarjetas con métricas clave.</li>
-        <li>Tendencia temporal — gráfico de líneas.</li>
-        <li>Ventas por canal/producto — barras apiladas.</li>
-        <li>Mapa geográfico.</li>
-        <li>Top productos/clientes — tabla ordenada.</li>
-        <li>Filtros globales — fecha, canal, región, categoría.</li>
-      </ul>
+        <h2>Beneficios</h2>
+        <p>
+          Con este dashboard, los equipos comerciales pueden identificar rápidamente qué productos o regiones impulsan las ventas, así como anticipar riesgos en zonas de bajo rendimiento. 
+          Esto facilita la toma de decisiones estratégicas en tiempo real.
+        </p>
 
-      <h2>Análisis por secciones</h2>
-      <h3>KPIs</h3>
-      <p>Insight tipo: si Ventas Netas suben pero Margen cae → revisar descuentos o mix de producto.</p>
-
-      <h3>Tendencia temporal</h3>
-      <p>Insight tipo: identificar picos estacionales o caídas tras promociones.</p>
-
-      <h3>Ventas por canal/producto</h3>
-      <p>Insight tipo: si un canal crece en unidades pero cae en ticket → revisar estrategia de precios.</p>
-
-      <h3>Top clientes/productos</h3>
-      <p>Insight tipo: detectar concentración de riesgo por pocos clientes.</p>
-
-      <h2>Buenas prácticas aplicadas</h2>
-      <ul>
-        <li>Jerarquía visual: KPIs arriba, detalle abajo.</li>
-        <li>Colores consistentes y accesibles.</li>
-        <li>Interactividad: filtros globales y slicers.</li>
-        <li>Rendimiento: modelo simplificado.</li>
-        <li>Documentación: nota metodológica al pie.</li>
-      </ul>
-
-      <h2>Ejemplo de medida DAX</h2>
-      <pre>
-Ventas Netas = SUM(Ventas[MontoNeto])
-
-Ventas YoY % =
-VAR VentasActual = [Ventas Netas]
-VAR VentasPrevio = CALCULATE([Ventas Netas], SAMEPERIODLASTYEAR('Fecha'[Date]))
-RETURN DIVIDE(VentasActual - VentasPrevio, VentasPrevio, 0)
-      </pre>
-
-      <h2>Conclusiones</h2>
-      <p>El dashboard proporciona una vista unificada y accionable...</p>
-
-      <h2>Cómo compartir e interactuar</h2>
-      <ul>
-        <li><a href="#">Enlace al dashboard interactivo</a></li>
-        <li>Descargar PDF.</li>
-        <li>Contacto: <a href="mailto:pablocampos0530@gmail.com">pablocampos0530@gmail.com</a></li>
-      </ul>
-
-      <h2>CTA</h2>
-      <p>¿Te interesa que te muestre cómo replicar algún gráfico o medida? Escríbeme y lo hacemos.</p>
-    </div>
+        <h2>Conclusión</h2>
+        <p>
+          Power BI es una herramienta poderosa que, aplicada con buenas prácticas de visualización, permite transformar los datos en un activo estratégico para la organización. 
+          Este dashboard es un ejemplo de cómo estructurar la información para apoyar la gestión comercial.
+        </p>
+      </article>
+    </main>
   </div>
 </body>
 </html>
-
