@@ -1,132 +1,123 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Power BI — Dashboard de Ventas | PC Notes</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Power BI — Dashboard de Ventas</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="navbar-inner">
-      <div class="navbar-left">
-        <a href="index.html" class="logo">PC Notes</a>
-      </div>
-      <nav class="navbar-right" aria-label="Navegación principal">
-        <a href="index.html">Home</a>
-        <a href="articles.html" class="active">Artículos</a>
-        <a href="categories.html">Categorías</a>
-        <a href="tags.html">Etiquetas</a>
-        <a href="about.html">Acerca de</a>
-      </nav>
+  <div id="container">
+    
+    <!-- Sidebar -->
+    <div id="sidebar">
+      <h1>PC Notes</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="articles.html">Artículos</a></li>
+        <li><a href="categories.html">Categorías</a></li>
+        <li><a href="tags.html">Etiquetas</a></li>
+        <li><a href="about.html">Acerca de</a></li>
+      </ul>
+
+      <img src="assets/profile.png" alt="Pablo Campos" style="width:100px;border-radius:50%;">
+      <h2>Pablo Campos</h2>
+      <p>Finanzas · Proyectos · Power BI</p>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/creatorpc05" target="_blank">GitHub</a></li>
+        <li><a href="mailto:pablocampos0530@gmail.com">Email</a></li>
+      </ul>
+
+      <h3>Temas</h3>
+      <ul>
+        <li><a href="categories.html#powerbi">Power BI</a></li>
+        <li><a href="categories.html#tesoreria">Tesorería</a></li>
+        <li><a href="categories.html#finanzas">Finanzas</a></li>
+        <li><a href="categories.html#automatizacion">Automatización</a></li>
+      </ul>
     </div>
-  </header>
 
-  <!-- MAIN CONTENT -->
-  <div class="container">
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
-      <div class="profile">
-        <div class="profile-pic">
-          <img src="assets/foto.jpg" alt="Pablo Campos">
-        </div>
-        <h2>Pablo Campos</h2>
-        <p>Finanzas · Proyectos · Power BI · IA</p>
+    <!-- Contenido -->
+    <div id="content">
+      <h1>Power BI — Dashboard de Ventas: análisis y buenas prácticas</h1>
+      <p><strong>Publicado:</strong> 2025-09-07 · <strong>Categoría:</strong> Power BI · 
+         <strong>Etiquetas:</strong> Power BI, Ventas, Dashboard, KPIs</p>
+      <p><em>Tiempo estimado de lectura: 4–6 minutos</em></p>
 
-        <div class="social-links">
-          <a href="mailto:Pablocampos0530@gmail.com">📧 Email</a><br>
-          <a href="https://www.linkedin.com/in/pablo-campos-174785174/" target="_blank">🔗 LinkedIn</a><br>
-          <a href="https://github.com/Creatorpc05" target="_blank">👨‍💻 GitHub</a>
-        </div>
+      <h2>Introducción</h2>
+      <p>Este dashboard de ventas fue diseñado para ofrecer una visión clara y accionable del desempeño comercial...</p>
 
-        <h3>Temas</h3>
-        <ul>
-          <li><a href="#">Power BI</a></li>
-          <li><a href="#">Finanzas</a></li>
-          <li><a href="#">Proyectos</a></li>
-          <li><a href="#">Otros</a></li>
-        </ul>
-      </div>
-    </aside>
+      <h2>Objetivos del dashboard</h2>
+      <ul>
+        <li>Proveer visibilidad diaria y mensual del comportamiento de ventas.</li>
+        <li>Permitir segmentación por canal, producto, cliente y región.</li>
+        <li>Facilitar el seguimiento de metas y alertas tempranas.</li>
+        <li>Servir como herramienta para reuniones comerciales y toma de decisiones.</li>
+      </ul>
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <main class="content">
-      <h2 class="section-title">Power BI — Dashboard de Ventas: análisis y buenas prácticas</h2>
+      <h2>Resumen del modelo de datos</h2>
+      <ul>
+        <li><strong>Tabla de hechos:</strong> Ventas.</li>
+        <li><strong>Dimensiones:</strong> Fecha, Producto, Cliente, Canal, Sucursal.</li>
+        <li><strong>Medidas clave:</strong> Ventas Netas, Unidades Vendidas, Margen, Ticket Promedio, Variación %, Acumulado YTD.</li>
+      </ul>
 
-      <p class="article-meta">Publicado: 2025-09-07 · Categoría: Power BI · Etiquetas: Power BI, Ventas, Dashboard, KPIs · Lectura: 4–6 min</p>
+      <h2>Visualizaciones principales</h2>
+      <ul>
+        <li>KPIs superiores — tarjetas con métricas clave.</li>
+        <li>Tendencia temporal — gráfico de líneas.</li>
+        <li>Ventas por canal/producto — barras apiladas.</li>
+        <li>Mapa geográfico.</li>
+        <li>Top productos/clientes — tabla ordenada.</li>
+        <li>Filtros globales — fecha, canal, región, categoría.</li>
+      </ul>
 
-      <!-- Imagen destacada (pequeña) -->
-      <img src="assets/powerbi-ventas.png" alt="Dashboard de Ventas en Power BI" class="featured-img">
+      <h2>Análisis por secciones</h2>
+      <h3>KPIs</h3>
+      <p>Insight tipo: si Ventas Netas suben pero Margen cae → revisar descuentos o mix de producto.</p>
 
-      <div class="article-content">
-        <h3>Introducción</h3>
-        <p>Este dashboard de ventas fue diseñado para ofrecer una visión clara y accionable del desempeño comercial. Su propósito es ayudar a la gerencia y áreas comerciales a identificar tendencias, detectar desviaciones frente a metas y priorizar acciones por canal, producto y cliente. En este artículo explico las decisiones de diseño, las métricas clave y buenas prácticas aplicadas durante su desarrollo.</p>
+      <h3>Tendencia temporal</h3>
+      <p>Insight tipo: identificar picos estacionales o caídas tras promociones.</p>
 
-        <h3>Objetivos del dashboard</h3>
-        <ul>
-          <li>Proveer visibilidad diaria y mensual del comportamiento de ventas.</li>
-          <li>Permitir segmentación por canal, producto, cliente y región.</li>
-          <li>Facilitar el seguimiento de metas y alertas tempranas.</li>
-          <li>Servir como herramienta para reuniones comerciales y toma de decisiones.</li>
-        </ul>
+      <h3>Ventas por canal/producto</h3>
+      <p>Insight tipo: si un canal crece en unidades pero cae en ticket → revisar estrategia de precios.</p>
 
-        <h3>Resumen del modelo de datos</h3>
-        <p>Tabla de hechos: <em>Ventas</em>. Dimensiones: Fecha, Producto, Cliente, Canal, Sucursal. Medidas clave (DAX): Ventas Netas, Unidades Vendidas, Margen, Ticket Promedio, Variación % vs periodo anterior, Acumulado YTD.</p>
+      <h3>Top clientes/productos</h3>
+      <p>Insight tipo: detectar concentración de riesgo por pocos clientes.</p>
 
-        <h3>Visualizaciones principales</h3>
-        <ul>
-          <li><strong>KPIs</strong> — Ventas Netas, Margen, Ticket Promedio, Crecimiento %.</li>
-          <li><strong>Tendencia temporal</strong> — gráfico de líneas mensual.</li>
-          <li><strong>Ventas por canal/producto</strong> — barras apiladas.</li>
-          <li><strong>Mapa</strong> — desempeño por región.</li>
-          <li><strong>Top productos/clientes</strong> — tablas filtrables.</li>
-        </ul>
+      <h2>Buenas prácticas aplicadas</h2>
+      <ul>
+        <li>Jerarquía visual: KPIs arriba, detalle abajo.</li>
+        <li>Colores consistentes y accesibles.</li>
+        <li>Interactividad: filtros globales y slicers.</li>
+        <li>Rendimiento: modelo simplificado.</li>
+        <li>Documentación: nota metodológica al pie.</li>
+      </ul>
 
-        <h3>Análisis por secciones</h3>
-        <p><strong>KPIs:</strong> si Ventas Netas suben pero Margen cae → revisar descuentos o mix de producto.</p>
+      <h2>Ejemplo de medida DAX</h2>
+      <pre>
+Ventas Netas = SUM(Ventas[MontoNeto])
 
-        <h3>Buenas prácticas</h3>
-        <ul>
-          <li>Jerarquía visual: KPIs arriba, detalle abajo.</li>
-          <li>Interactividad: filtros globales y slicers bien posicionados.</li>
-          <li>Rendimiento: modelo simplificado, medidas precalculadas.</li>
-        </ul>
+Ventas YoY % =
+VAR VentasActual = [Ventas Netas]
+VAR VentasPrevio = CALCULATE([Ventas Netas], SAMEPERIODLASTYEAR('Fecha'[Date]))
+RETURN DIVIDE(VentasActual - VentasPrevio, VentasPrevio, 0)
+      </pre>
 
-        <h3>Recursos</h3>
-        <p>Captura completa del dashboard: <code>assets/powerbi-ventas.png</code>. Contacto: Pablocampos0530@gmail.com</p>
-      </div>
+      <h2>Conclusiones</h2>
+      <p>El dashboard proporciona una vista unificada y accionable...</p>
 
-      <!-- Botón para cargar iframe (no carga por defecto) -->
-      <p>
-        <button id="toggle-embed" class="btn">Mostrar dashboard interactivo</button>
-        <a href="https://app.powerbi.com/view?r=eyJrIjoiZDVjMDgyNzYtODRmMS00ODE4LWE5N2MtYmVhNjQ3ZmM5NzY3IiwidCI6Ijc5ODcxZWIxLTYwOTYtNDJiZi05OGVmLWI0ZjNlNGVmODMxOCIsImMiOjR9" target="_blank" rel="noopener">Abrir en Power BI (pestaña nueva)</a>
-      </p>
+      <h2>Cómo compartir e interactuar</h2>
+      <ul>
+        <li><a href="#">Enlace al dashboard interactivo</a></li>
+        <li>Descargar PDF.</li>
+        <li>Contacto: <a href="mailto:pablocampos0530@gmail.com">pablocampos0530@gmail.com</a></li>
+      </ul>
 
-      <div id="embed-wrap" class="embed-container" style="display:none;">
-        <iframe title="Solucion Consolidado -pablo" src="https://app.powerbi.com/view?r=eyJrIjoiZDVjMDgyNzYtODRmMS00ODE4LWE5N2MtYmVhNjQ3ZmM5NzY3IiwidCI6Ijc5ODcxZWIxLTYwOTYtNDJiZi05OGVmLWI0ZjNlNGVmODMxOCIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
-      </div>
-
-    </main>
+      <h2>CTA</h2>
+      <p>¿Te interesa que te muestre cómo replicar algún gráfico o medida? Escríbeme y lo hacemos.</p>
+    </div>
   </div>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>© 2025 Pablo Campos | <a href="index.html">PC Notes</a></p>
-  </footer>
-
-  <script>
-    document.getElementById('toggle-embed').addEventListener('click', function () {
-      var wrap = document.getElementById('embed-wrap');
-      if (wrap.style.display === 'none' || wrap.style.display === '') {
-        wrap.style.display = 'block';
-        this.textContent = 'Ocultar dashboard interactivo';
-        window.scrollTo({ top: wrap.offsetTop - 20, behavior: 'smooth' });
-      } else {
-        wrap.style.display = 'none';
-        this.textContent = 'Mostrar dashboard interactivo';
-      }
-    });
-  </script>
 </body>
 </html>
+
