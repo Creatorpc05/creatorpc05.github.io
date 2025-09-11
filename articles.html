@@ -3,52 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Artículos | PC Notes</title>
+  <title>Mis Artículos | PC Notes</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="navbar-inner">
-      <div class="navbar-left">
-        <a href="index.html" class="logo">PC Notes</a>
-      </div>
-      <nav class="navbar-right" aria-label="Navegación principal">
-        <a href="index.html">Home</a>
-        <a href="articles.html" class="active">Artículos</a>
-        <a href="categories.html">Categorías</a>
-        <a href="tags.html">Etiquetas</a>
-        <a href="about.html">Acerca de</a>
-      </nav>
-    </div>
+  <header>
+    <nav>
+      <h1 class="logo">PC Notes</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="articles.html" class="active">Artículos</a></li>
+        <li><a href="categories.html">Categorías</a></li>
+        <li><a href="tags.html">Etiquetas</a></li>
+        <li><a href="about.html">Acerca de</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- LISTADO DE ARTÍCULOS -->
-  <div class="container">
-    <main class="content">
-      <h1>Mis Artículos</h1>
+  <main class="content-with-sidebar">
+    <!-- Sidebar igual al Home -->
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="assets/profile.jpg" alt="Pablo Campos" class="profile-img">
+        <h2>Pablo Campos</h2>
+        <p>Finanzas · Proyectos · Power BI</p>
+      </div>
+      <div class="social-links">
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+        <a href="#">Email</a>
+      </div>
+      <div class="sidebar-section">
+        <h3>Temas</h3>
+        <ul>
+          <li>Power BI</li>
+          <li>Tesorería</li>
+          <li>Finanzas</li>
+          <li>Automatización</li>
+        </ul>
+      </div>
+    </aside>
 
-      <!-- Artículo 1 -->
-      <article class="post-excerpt">
-        <h2>
+    <!-- Contenido de artículos -->
+    <section class="main-content">
+      <h2>Mis Artículos</h2>
+      
+      <article class="article-excerpt">
+        <h3>
           <a href="article-powerbi.html">
             Power BI — Dashboard de Ventas: análisis y buenas prácticas
           </a>
-        </h2>
+        </h3>
         <p>
-          En este artículo comparto un dashboard de ventas desarrollado en Power BI, 
-          mostrando cómo convertir datos en información estratégica para la toma de decisiones...
+          Caso práctico: diseño y análisis de un dashboard de ventas en Power BI — KPIs, modelo de datos y buenas prácticas...
         </p>
+        <a href="article-powerbi.html" class="btn">Leer más</a>
       </article>
 
-      <!-- Aquí después puedes agregar más artículos con el mismo formato -->
-    </main>
-  </div>
+    </section>
+  </main>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>© 2025 Pablo Campos | <a href="index.html">PC Notes</a></p>
+  <footer>
+    <p>© 2025 Pablo Campos | PC Notes</p>
   </footer>
 </body>
 </html>
-
