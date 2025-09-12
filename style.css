@@ -260,7 +260,13 @@ body {
 
 .article-content h3 {
   margin-top: 24px;
-  color: #007acc; /* azul del título principal */
+  color: #007acc; /* azul oscuro actual */
+  transition: color 0.3s ease; /* para que el cambio sea suave */
+}
+
+.article-content h3:hover {
+  color: #3399ff; /* azul más claro y brillante al pasar el mouse */
+  cursor: pointer; /* opcional, cambia el cursor */
 }
 
 .embed-container {
