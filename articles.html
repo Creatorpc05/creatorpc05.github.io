@@ -1,70 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis Artículos | PC Notes</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Artículos | PC Notes – Pablo Campos</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <h1 class="logo">PC Notes</h1>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="articles.html" class="active">Artículos</a></li>
-        <li><a href="categories.html">Categorías</a></li>
-        <li><a href="tags.html">Etiquetas</a></li>
-        <li><a href="about.html">Acerca de</a></li>
-      </ul>
-    </nav>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <div class="navbar-left">
+        <a href="index.html" class="logo">PC Notes</a>
+      </div>
+      <nav class="navbar-right" aria-label="Navegación principal">
+        <a href="index.html">Home</a>
+        <a href="articles.html" class="active">Artículos</a>
+        <a href="categories.html">Categorías</a>
+        <a href="tags.html">Etiquetas</a>
+        <a href="about.html">Acerca de</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="content-with-sidebar">
-    <!-- Sidebar igual al Home -->
+  <!-- MAIN CONTENT -->
+  <div class="container">
+    <!-- SIDEBAR (idéntico al Home) -->
     <aside class="sidebar">
       <div class="profile">
-        <img src="assets/profile.jpg" alt="Pablo Campos" class="profile-img">
+        <div class="profile-pic">
+          <img src="assets/foto.jpg" alt="Pablo Campos">
+        </div>
         <h2>Pablo Campos</h2>
-        <p>Finanzas · Proyectos · Power BI</p>
-      </div>
-      <div class="social-links">
-        <a href="#">LinkedIn</a>
-        <a href="#">GitHub</a>
-        <a href="#">Email</a>
-      </div>
-      <div class="sidebar-section">
+        <p>Finanzas · Proyectos · Power BI · IA</p>
+
+        <div class="social-links">
+          <a href="mailto:Pablocampos0530@gmail.com">📧 Email</a><br>
+          <a href="https://www.linkedin.com/in/pablo-campos-174785174/" target="_blank" rel="noopener">🔗 LinkedIn</a><br>
+          <a href="https://github.com/Creatorpc05" target="_blank" rel="noopener">👨‍💻 GitHub</a>
+        </div>
+
         <h3>Temas</h3>
         <ul>
-          <li>Power BI</li>
-          <li>Tesorería</li>
-          <li>Finanzas</li>
-          <li>Automatización</li>
+          <li><a href="articles.html#powerbi">Power BI</a></li>
+          <li><a href="articles.html#finanzas">Finanzas</a></li>
+          <li><a href="articles.html#proyectos">Proyectos</a></li>
+          <li><a href="articles.html#otros">Otros</a></li>
         </ul>
       </div>
     </aside>
 
-    <!-- Contenido de artículos -->
-    <section class="main-content">
-      <h2>Mis Artículos</h2>
-      
-      <article class="article-excerpt">
-        <h3>
-          <a href="article-powerbi.html">
-            Power BI — Dashboard de Ventas: análisis y buenas prácticas
-          </a>
-        </h3>
-        <p>
-          Caso práctico: diseño y análisis de un dashboard de ventas en Power BI — KPIs, modelo de datos y buenas prácticas...
-        </p>
-        <a href="article-powerbi.html" class="btn">Leer más</a>
-      </article>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="content">
+      <h2 class="section-title">Artículos</h2>
+      <p>Home / Artículos</p>
 
-    </section>
-  </main>
+      <p>Aquí están los artículos publicados. Haz clic en el título o en "Leer más" para ver el artículo completo.</p>
 
-  <footer>
-    <p>© 2025 Pablo Campos | PC Notes</p>
+      <!-- LISTADO DE ARTÍCULOS -->
+      <section class="article-list">
+
+        <!-- Artículo 1 -->
+        <article class="article-item" id="powerbi">
+          <h3>
+            <a href="article-powerbi.html" class="article-link">
+              Power BI — Dashboard de Ventas: análisis y buenas prácticas
+            </a>
+          </h3>
+
+          <p class="article-meta">Publicado: 2025-09-07 · Categoría: Power BI · Etiquetas: Power BI, Ventas · Lectura: 4–6 min</p>
+
+          <p class="article-excerpt">
+            Caso práctico: diseño y análisis de un dashboard de ventas en Power BI — KPIs, modelo de datos y buenas prácticas...
+          </p>
+
+          <p><a href="article-powerbi.html" class="btn">Leer más</a></p>
+          <hr>
+        </article>
+
+        <!-- Puedes duplicar la estructura anterior para añadir más artículos -->
+        <!-- Ejemplo de placeholder para otro artículo:
+        <article class="article-item" id="otro">
+          <h3><a href="article-otro.html" class="article-link">Título de artículo (placeholder)</a></h3>
+          <p class="article-meta">Publicado: 2025-??-?? · Categoría: Otros · Etiquetas: placeholder</p>
+          <p class="article-excerpt">Resumen: Este es un ejemplo de cómo aparecerá otro artículo. Reemplázalo cuando estés listo.</p>
+          <p><a href="article-otro.html" class="btn">Leer más</a></p>
+          <hr>
+        </article>
+        -->
+
+      </section>
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Pablo Campos | <a href="index.html">PC Notes</a></p>
   </footer>
+
 </body>
 </html>
