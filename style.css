@@ -302,4 +302,72 @@ body {
   background-color: #005c99;
 }
 
+/* === Estilos refinados para articles.html === */
+
+/* Lista de artículos */
+.article-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* espacio entre artículos */
+}
+
+/* Cada artículo */
+.article-item {
+  background: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.article-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+/* Títulos */
+.article-item h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.4rem;
+  line-height: 1.3;
+}
+
+.article-item h3 a {
+  color: #4ea3ff;
+  text-decoration: none;
+}
+
+.article-item h3 a:hover {
+  text-decoration: underline;
+}
+
+/* Meta info */
+.article-meta {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-bottom: 0.8rem;
+}
+
+/* Extracto */
+.article-excerpt {
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 1rem;
+}
+
+/* Botón */
+.article-item .btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.article-item .btn:hover {
+  background: #0056b3;
+}
+
 
