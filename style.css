@@ -260,7 +260,7 @@ body {
 
 .article-content h3 {
   margin-top: 24px;
-  color: #333;
+  color: #007acc; /* azul del título principal */
 }
 
 .embed-container {
