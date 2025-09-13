@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Power BI — Modelado y optimización | PC Notes</title>
+  <!-- Uso ruta absoluta para evitar problemas de rutas -->
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <div class="navbar-left">
+        <a href="/index.html" class="logo">PC Notes</a>
+      </div>
+      <nav class="navbar-right" aria-label="Navegación principal">
+        <a href="/index.html">Home</a>
+        <a href="/articles.html" class="active">Artículos</a>
+        <a href="/categories.html">Categorías</a>
+        <a href="/tags.html">Etiquetas</a>
+        <a href="/about.html">Acerca de</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="profile">
+        <div class="profile-pic">
+          <img src="/assets/foto.jpg" alt="Pablo Campos">
+        </div>
+        <h2>Pablo Campos</h2>
+        <p>Finanzas · Proyectos · Power BI · IA</p>
+
+        <div class="social-links">
+          <a href="mailto:Pablocampos0530@gmail.com">📧 Email</a><br>
+          <a href="https://www.linkedin.com/in/pablo-campos-174785174/" target="_blank" rel="noopener">🔗 LinkedIn</a><br>
+          <a href="https://github.com/Creatorpc05" target="_blank" rel="noopener">👨‍💻 GitHub</a>
+        </div>
+
+        <h3>Temas</h3>
+        <ul>
+          <li><a href="/articles.html#powerbi">Power BI</a></li>
+          <li><a href="/articles.html#finanzas">Finanzas</a></li>
+          <li><a href="/articles.html#proyectos">Proyectos</a></li>
+          <li><a href="/articles.html#otros">Otros</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="content">
+      <h2 class="section-title">Power BI — Modelado y optimización del modelo de datos</h2>
+
+      <p class="article-meta">Publicado: 2025-09-xx · Categoría: Power BI · Etiquetas: Power BI, Modelado · Lectura: 4–6 min</p>
+
+      <!-- Imagen destacada (usa la misma imagen por ahora, puedes cambiarla luego subiendo otra a /assets/) -->
+      <img src="/assets/powerbi-ventas.png" alt="Modelado en Power BI" class="featured-img">
+
+      <div class="article-content">
+        <h3>Introducción</h3>
+        <p>
+          En este artículo repasamos buenas prácticas de modelado en Power BI pensadas para mejorar rendimiento y facilitar análisis: separación de hechos y dimensiones, tabla calendario, relaciones claras y columnas/métricas optimizadas.
+        </p>
+
+        <h3>Principios básicos de modelado</h3>
+        <ul>
+          <li>Separar <em>hechos</em> (eventos/mediciones) de <em>dimensiones</em> (atributos).</li>
+          <li>Usar una tabla calendario única y consistente para facilitar cálculos temporales.</li>
+          <li>Evitar columnas calculadas innecesarias; preferir medidas DAX cuando sea posible.</li>
+        </ul>
+
+        <h3>Optimización para rendimiento</h3>
+        <p>
+          Reducir cardinalidad, eliminar columnas que no se usan en análisis, usar agregaciones y revisar relaciones que puedan causar duplicación de filas.
+        </p>
+
+        <h3>Comprobaciones prácticas</h3>
+        <ul>
+          <li>Verifica tamaño del modelo en MB tras las transformaciones.</li>
+          <li>Revisa dependencias de medidas con <code>Performance Analyzer</code>.</li>
+          <li>Documenta el origen y frecuencia de actualización de los datos.</li>
+        </ul>
+
+        <h3>Conclusión</h3>
+        <p>
+          Un modelo bien diseñado acelera consultas, reduce errores y permite escalar analíticas. Cuando quieras, adaptamos este artículo con ejemplos concretos de tu dashboard.
+        </p>
+      </div>
+
+      <!-- CTA / enlaces -->
+      <p>
+        <a href="/articles.html" class="btn">⬅ Volver a Artículos</a>
+      </p>
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Pablo Campos | <a href="/index.html">PC Notes</a></p>
+  </footer>
+</body>
+</html>
