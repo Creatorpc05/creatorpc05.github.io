@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Análisis Financiero — Informe de Ventas | PC Notes</title>
+  <title>Power BI — Modelado de Datos | PC Notes</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -25,7 +25,7 @@
 
   <!-- MAIN CONTENT -->
   <div class="container">
-    <!-- SIDEBAR (igual que en home) -->
+    <!-- SIDEBAR -->
     <aside class="sidebar">
       <div class="profile">
         <div class="profile-pic">
@@ -52,43 +52,47 @@
 
     <!-- CONTENIDO PRINCIPAL -->
     <main class="content">
-      <h2 class="section-title">Análisis Financiero — Informe de Ventas (placeholder)</h2>
+      <h2 class="section-title">Power BI — Modelado de Datos</h2>
 
-      <p class="article-meta">Publicado: 2025-09-XX · Categoría: Finanzas · Etiquetas: Finanzas, Tesorería · Lectura: 3–5 min</p>
+      <p class="article-meta">Publicado: 2025-09-13 · Categoría: Power BI · Etiquetas: Modelado, DAX · Lectura: 3–5 min</p>
 
-      <!-- Imagen destacada (sube assets/finanzas-placeholder.png si quieres) -->
-      <img src="assets/finanzas-placeholder.png" alt="Informe financiero" class="featured-img">
+      <!-- Imagen destacada -->
+      <img src="assets/powerbi-placeholder.png" alt="Power BI Modelado" class="featured-img">
 
       <div class="article-content">
-        <h3>Introducción</h3>
-        <p>En este artículo comparto un caso práctico de análisis financiero aplicado a ventas: KPIs clave, controles de tesorería y recomendaciones para mejorar el desempeño comercial.</p>
+        <p>
+          En este artículo veremos las mejores prácticas de modelado de datos en Power BI.
+          El enfoque está en cómo organizar las tablas, relaciones y medidas para garantizar
+          un mejor rendimiento, escalabilidad y confiabilidad en los dashboards.
+        </p>
 
-        <h3>Objetivos</h3>
-        <ul>
-          <li>Medir performance de ventas por canal y producto.</li>
-          <li>Detectar desviaciones frente a metas y alertas tempranas.</li>
-          <li>Proponer acciones de mejora para tesorería y rentabilidad.</li>
-        </ul>
+        <h3>1. Diseño del modelo</h3>
+        <p>
+          Es importante estructurar un modelo en forma de estrella (star schema), evitando
+          relaciones innecesarias y minimizando columnas calculadas en tablas grandes.
+        </p>
 
-        <h3>Resumen del análisis</h3>
-        <p>Descripción breve del dataset, medidas clave (Ventas Netas, Margen, Ticket promedio, Rotación) y metodología de cálculo.</p>
+        <h3>2. Uso de DAX optimizado</h3>
+        <p>
+          Siempre que sea posible, utiliza medidas en lugar de columnas calculadas. Esto
+          mejora el rendimiento y facilita el mantenimiento.
+        </p>
 
-        <h3>Buenas prácticas</h3>
-        <ul>
-          <li>Consolidar fuentes antes del análisis.</li>
-          <li>Controlar periodos e integrar tabla calendario.</li>
-          <li>Normalizar y documentar transformaciones.</li>
-        </ul>
+        <h3>3. Documentación y consistencia</h3>
+        <p>
+          Nombra de forma clara las tablas, columnas y medidas. Esto ayuda al equipo a
+          comprender y mantener el modelo a largo plazo.
+        </p>
 
-        <h3>Conclusión</h3>
-        <p>Con una visualización clara y métricas consistentes, el área financiera puede apoyar decisiones tácticas y estratégicas con datos confiables.</p>
+        <p><strong>Conclusión:</strong> un buen modelado de datos es la base para crear dashboards
+        confiables y de alto rendimiento en Power BI.</p>
 
         <p><a href="articles.html">← Volver a Artículos</a></p>
       </div>
     </main>
   </div>
 
-  <!-- FOOTER (igual que home) -->
+  <!-- FOOTER -->
   <footer class="footer">
     <p>© 2025 Pablo Campos | <a href="index.html">PC Notes</a></p>
   </footer>
