@@ -1,60 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Power BI — Modelado de Datos | PC Notes</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="articles.html">Artículos</a> |
-      <a href="about.html">Acerca de</a>
-    </nav>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <div class="navbar-left">
+        <a href="index.html" class="logo">PC Notes</a>
+      </div>
+      <nav class="navbar-right" aria-label="Navegación principal">
+        <a href="index.html">Home</a>
+        <a href="articles.html" class="active">Artículos</a>
+        <a href="categories.html">Categorías</a>
+        <a href="tags.html">Etiquetas</a>
+        <a href="about.html">Acerca de</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="article-page">
-    <article>
-      <h1>Power BI — Modelado de Datos</h1>
-      <p><small>Publicado: 2025-09-13 | Categoría: Power BI | Etiquetas: Modelado, DAX</small></p>
-      
-      <p>
-        En este artículo veremos las mejores prácticas de modelado de datos en Power BI.
-        El enfoque está en cómo organizar las tablas, relaciones y medidas para garantizar
-        un mejor rendimiento, escalabilidad y confiabilidad en los dashboards.
-      </p>
+  <!-- MAIN CONTENT -->
+  <div class="container">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="profile">
+        <div class="profile-pic">
+          <img src="assets/foto.jpg" alt="Pablo Campos">
+        </div>
+        <h2>Pablo Campos</h2>
+        <p>Finanzas · Proyectos · Power BI · IA</p>
 
-      <h2>1. Diseño del modelo</h2>
-      <p>
-        Es importante estructurar un modelo en forma de estrella (star schema), evitando
-        relaciones innecesarias y minimizando columnas calculadas en tablas grandes.
-      </p>
+        <div class="social-links">
+          <a href="mailto:Pablocampos0530@gmail.com">📧 Email</a><br>
+          <a href="https://www.linkedin.com/in/pablo-campos-174785174/" target="_blank">🔗 LinkedIn</a><br>
+          <a href="https://github.com/Creatorpc05" target="_blank">👨‍💻 GitHub</a>
+        </div>
 
-      <h2>2. Uso de DAX optimizado</h2>
-      <p>
-        Siempre que sea posible, utiliza medidas en lugar de columnas calculadas. Esto
-        mejora el rendimiento y facilita el mantenimiento.
-      </p>
+        <h3>Temas</h3>
+        <ul>
+          <li><a href="#">Power BI</a></li>
+          <li><a href="#">Finanzas</a></li>
+          <li><a href="#">Proyectos</a></li>
+          <li><a href="#">Otros</a></li>
+        </ul>
+      </div>
+    </aside>
 
-      <h2>3. Documentación y consistencia</h2>
-      <p>
-        Nombra de forma clara las tablas, columnas y medidas. Esto ayuda al equipo a
-        comprender y mantener el modelo a largo plazo.
-      </p>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="content">
+      <h2 class="section-title">Power BI — Modelado de Datos</h2>
 
-      <p><strong>Conclusión:</strong> un buen modelado de datos es la base para crear dashboards
-      confiables y de alto rendimiento en Power BI.</p>
-    </article>
+      <p class="article-meta">Publicado: 2025-09-13 · Categoría: Power BI · Etiquetas: Modelado, DAX · Lectura: 3–5 min</p>
 
-    <div class="back-link">
-      <a href="articles.html">← Volver a Artículos</a>
-    </div>
-  </main>
+      <!-- Imagen destacada -->
+      <img src="assets/powerbi-placeholder.png" alt="Power BI Modelado" class="featured-img">
 
-  <footer>
-    <p>© 2025 Pablo Campos | PC Notes</p>
+      <div class="article-content">
+        <p>
+          En este artículo veremos las mejores prácticas de modelado de datos en Power BI.
+          El enfoque está en cómo organizar las tablas, relaciones y medidas para garantizar
+          un mejor rendimiento, escalabilidad y confiabilidad en los dashboards.
+        </p>
+
+        <h3>1. Diseño del modelo</h3>
+        <p>
+          Es importante estructurar un modelo en forma de estrella (star schema), evitando
+          relaciones innecesarias y minimizando columnas calculadas en tablas grandes.
+        </p>
+
+        <h3>2. Uso de DAX optimizado</h3>
+        <p>
+          Siempre que sea posible, utiliza medidas en lugar de columnas calculadas. Esto
+          mejora el rendimiento y facilita el mantenimiento.
+        </p>
+
+        <h3>3. Documentación y consistencia</h3>
+        <p>
+          Nombra de forma clara las tablas, columnas y medidas. Esto ayuda al equipo a
+          comprender y mantener el modelo a largo plazo.
+        </p>
+
+        <p><strong>Conclusión:</strong> un buen modelado de datos es la base para crear dashboards
+        confiables y de alto rendimiento en Power BI.</p>
+
+        <p><a href="articles.html">← Volver a Artículos</a></p>
+      </div>
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Pablo Campos | <a href="index.html">PC Notes</a></p>
   </footer>
 </body>
 </html>
