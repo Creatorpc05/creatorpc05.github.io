@@ -373,14 +373,14 @@ body {
 /* ==== ESTILO: FIGURAS E IMÁGENES EN ARTÍCULOS ==== */
 .article-figure {
   margin: 18px auto;
-  max-width: 780px;
+  max-width: 640px;   /* antes 780px → ahora más pequeño */
   text-align: center;
 }
 
 .article-figure.small {
-  max-width: 360px;
+  max-width: 280px;   /* antes 360px → más compacto */
   display: inline-block;
-  margin: 12px 14px;
+  margin: 10px 12px;
   vertical-align: top;
 }
 
@@ -392,9 +392,10 @@ body {
 }
 
 .article-figure figcaption {
-  margin-top: 8px;
-  font-size: 0.9rem;
-  color: #9aa6b2; /* tono sutil para pie de foto */
+  margin-top: 6px;
+  font-size: 0.85rem;   /* un pelín más pequeño */
+  color: #9aa6b2;
 }
+
 
 
