@@ -1,146 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Indicadores Financieros - Tesorería Estratégica</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Análisis Financiero — Informe de Ventas | PC Notes</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <div class="navbar-left">
+        <a href="index.html" class="logo">PC Notes</a>
+      </div>
+      <nav class="navbar-right" aria-label="Navegación principal">
+        <a href="index.html">Home</a>
+        <a href="articles.html" class="active">Artículos</a>
+        <a href="categories.html">Categorías</a>
+        <a href="tags.html">Etiquetas</a>
+        <a href="about.html">Acerca de</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
   <div class="container">
+    <!-- SIDEBAR (igual que en home) -->
     <aside class="sidebar">
-      <h2>Artículos</h2>
-      <ul>
-        <li><a href="article-finanzas.html">Finanzas</a></li>
-        <li><a href="article-proyectos.html">Proyectos</a></li>
-        <li><a href="article-otros.html">Otros</a></li>
-        <li><a href="article-powerbi2.html">Power BI</a></li>
-      </ul>
+      <div class="profile">
+        <div class="profile-pic">
+          <img src="assets/foto.jpg" alt="Pablo Campos">
+        </div>
+        <h2>Pablo Campos</h2>
+        <p>Finanzas · Proyectos · Power BI · IA</p>
+
+        <div class="social-links">
+          <a href="mailto:Pablocampos0530@gmail.com">📧 Email</a><br>
+          <a href="https://www.linkedin.com/in/pablo-campos-174785174/" target="_blank">🔗 LinkedIn</a><br>
+          <a href="https://github.com/Creatorpc05" target="_blank">👨‍💻 GitHub</a>
+        </div>
+
+        <h3>Temas</h3>
+        <ul>
+          <li><a href="#">Power BI</a></li>
+          <li><a href="#">Finanzas</a></li>
+          <li><a href="#">Proyectos</a></li>
+          <li><a href="#">Otros</a></li>
+        </ul>
+      </div>
     </aside>
 
+    <!-- CONTENIDO PRINCIPAL -->
     <main class="content">
-      <h1>Indicadores Financieros Clave para una Tesorería Estratégica</h1>
+      <h2 class="section-title">Análisis Financiero — Informe de Ventas (placeholder)</h2>
 
-      <h2>Introducción</h2>
-      <p>
-        En un entorno empresarial donde la liquidez y la eficiencia son determinantes,
-        los indicadores financieros clave (KPIs) se convierten en herramientas indispensables.
-        Más allá de simples métricas, permiten anticipar riesgos, optimizar recursos y respaldar decisiones estratégicas.
-      </p>
-      <p>
-        La tesorería, como puente entre la operación diaria y la visión corporativa,
-        encuentra en estos indicadores un mapa claro para gestionar la caja de manera inteligente y sostenible.
-      </p>
+      <p class="article-meta">Publicado: 2025-09-XX · Categoría: Finanzas · Etiquetas: Finanzas, Tesorería · Lectura: 3–5 min</p>
 
-      <h2>¿Qué son los indicadores financieros clave?</h2>
-      <p>Los KPIs financieros son métricas cuantitativas que miden la salud económica y la eficiencia de los procesos.</p>
-      <ul>
-        <li><strong>Liquidez:</strong> disponibilidad de efectivo para cubrir compromisos.</li>
-        <li><strong>Eficiencia operativa:</strong> velocidad de cobro, pago y conversión de capital.</li>
-        <li><strong>Resiliencia financiera:</strong> capacidad para sostener operaciones en escenarios de incertidumbre.</li>
-      </ul>
+      <!-- Imagen destacada (sube assets/finanzas-placeholder.png si quieres) -->
+      <img src="assets/finanzas-placeholder.png" alt="Informe financiero" class="featured-img">
 
-      <h2>Principales indicadores de Tesorería</h2>
-      <p>🔹 <strong>Ciclo de Conversión de Efectivo (Cash Conversion Cycle – CCC)</strong></p>
-      <p>Evalúa cuántos días tarda la organización en convertir sus inversiones en efectivo.<br>
-      Fórmula: CCC = Días de Inventario + DSO – DPO<br>
-      Interpretación: un CCC bajo refleja eficiencia; uno alto puede indicar presión de liquidez.</p>
+      <div class="article-content">
+        <h3>Introducción</h3>
+        <p>En este artículo comparto un caso práctico de análisis financiero aplicado a ventas: KPIs clave, controles de tesorería y recomendaciones para mejorar el desempeño comercial.</p>
 
-      <p>🔹 <strong>Días de Cuentas por Cobrar (DSO – Days Sales Outstanding)</strong></p>
-      <p>Mide en promedio cuántos días tardan los clientes en pagar.<br>
-      Un DSO elevado puede evidenciar problemas de cobranza o políticas laxas de crédito.<br>
-      Cuanto menor sea, más rápido circula el efectivo.</p>
+        <h3>Objetivos</h3>
+        <ul>
+          <li>Medir performance de ventas por canal y producto.</li>
+          <li>Detectar desviaciones frente a metas y alertas tempranas.</li>
+          <li>Proponer acciones de mejora para tesorería y rentabilidad.</li>
+        </ul>
 
-      <p>🔹 <strong>Días de Cuentas por Pagar (DPO – Days Payables Outstanding)</strong></p>
-      <p>Refleja el tiempo promedio en que la organización paga a proveedores.<br>
-      Un DPO alto puede mejorar la liquidez, pero también tensionar las relaciones comerciales.</p>
+        <h3>Resumen del análisis</h3>
+        <p>Descripción breve del dataset, medidas clave (Ventas Netas, Margen, Ticket promedio, Rotación) y metodología de cálculo.</p>
 
-      <p>🔹 <strong>Días de Efectivo Disponible (Days Cash on Hand)</strong></p>
-      <p>Indica cuántos días puede operar la compañía solo con el efectivo actual.<br>
-      Es un indicador clave de resiliencia, especialmente en contextos de volatilidad.</p>
+        <h3>Buenas prácticas</h3>
+        <ul>
+          <li>Consolidar fuentes antes del análisis.</li>
+          <li>Controlar periodos e integrar tabla calendario.</li>
+          <li>Normalizar y documentar transformaciones.</li>
+        </ul>
 
-      <p>🔹 <strong>Precisión en el Pronóstico de Tesorería (Forecast Accuracy)</strong></p>
-      <p>Mide la exactitud entre lo proyectado y lo ejecutado en el flujo de caja.<br>
-      Una alta precisión fortalece la confianza en la planeación y minimiza riesgos de liquidez.</p>
+        <h3>Conclusión</h3>
+        <p>Con una visualización clara y métricas consistentes, el área financiera puede apoyar decisiones tácticas y estratégicas con datos confiables.</p>
 
-      <h2>Caso práctico con cifras ficticias</h2>
-      <ul>
-        <li>Ventas anuales: $36.000 millones</li>
-        <li>Inventarios promedio: $6.000 millones</li>
-        <li>Cuentas por cobrar: $4.500 millones</li>
-        <li>Cuentas por pagar: $3.000 millones</li>
-        <li>Efectivo disponible: $2.000 millones</li>
-        <li>Gastos operativos mensuales: $1.000 millones</li>
-      </ul>
-
-      <p><strong>Cálculos:</strong></p>
-      <ul>
-        <li>DSO = (4.500 / 36.000) × 360 = 45 días</li>
-        <li>DPO = (3.000 / 36.000) × 360 = 30 días</li>
-        <li>Días de Inventario = (6.000 / 36.000) × 360 = 60 días</li>
-        <li>CCC = 60 + 45 – 30 = 75 días</li>
-        <li>Days Cash on Hand = (2.000 / 1.000) × 30 = 60 días</li>
-      </ul>
-
-      <!-- Imagen 1: gráfico de barras -->
-      <figure>
-        <img src="assets/grafico-barras.png" alt="Gráfico de barras: comparación DSO, DPO y CCC">
-        <figcaption>Comparación de DSO, DPO y CCC</figcaption>
-      </figure>
-
-      <h3>Interpretación estratégica</h3>
-      <p>
-        El CCC de 75 días indica que la organización tarda más de dos meses en recuperar el efectivo invertido.<br>
-        El DSO de 45 días muestra un ciclo de cobro estándar, con espacio de mejora.<br>
-        El DPO de 30 días es razonable, aunque negociar plazos más amplios ayudaría a la liquidez.<br>
-        Con 60 días de caja disponible, existe un buen colchón financiero para contingencias.
-      </p>
-
-      <h2>Beneficios de la gestión basada en KPIs</h2>
-      <ul>
-        <li>Decisiones más rápidas y fundamentadas para la dirección financiera.</li>
-        <li>Optimización del capital de trabajo, equilibrando cobros y pagos.</li>
-        <li>Mayor resiliencia empresarial al anticipar escenarios con datos confiables.</li>
-        <li>Automatización y eficiencia, al integrar estos KPIs en dashboards interactivos.</li>
-      </ul>
-
-      <h2>Visualización y valor agregado</h2>
-      <p>Una presentación gráfica clara refuerza el impacto de los KPIs:</p>
-
-      <!-- Imagen 2: velocímetro -->
-      <figure>
-        <img src="assets/velocimetro.png" alt="Velocímetro: precisión del forecast">
-        <figcaption>Precisión del pronóstico de tesorería</figcaption>
-      </figure>
-
-      <!-- Imagen 3: gráfico de dona -->
-      <figure>
-        <img src="assets/grafico-dona.png" alt="Gráfico de dona: Days Cash on Hand">
-        <figcaption>Días de Efectivo Disponible (Days Cash on Hand)</figcaption>
-      </figure>
-
-      <!-- Imagen 4: tarjetas resumen -->
-      <figure>
-        <img src="assets/tarjetas-kpis.png" alt="Tarjetas resumen de KPIs">
-        <figcaption>Resumen visual de KPIs financieros clave</figcaption>
-      </figure>
-
-      <p>Esto convierte a la tesorería en un área moderna y estratégica, capaz de transformar datos en decisiones.</p>
-
-      <h2>Conclusión</h2>
-      <p>
-        Los KPIs financieros no son un fin en sí mismos: son el puente entre la operación y la estrategia.
-        Cuando se miden, interpretan y presentan de forma estructurada, convierten a la tesorería en un socio clave para la alta dirección.
-      </p>
-      <p>
-        Gracias a la analítica y la digitalización, los indicadores dejan de ser cifras estáticas para transformarse en insumos dinámicos
-        que generan valor y fortalecen la gestión financiera.
-      </p>
+        <p><a href="articles.html">← Volver a Artículos</a></p>
+      </div>
     </main>
   </div>
 
-  <footer>
-    <p>&copy; 2025 Portafolio Profesional</p>
+  <!-- FOOTER (igual que home) -->
+  <footer class="footer">
+    <p>© 2025 Pablo Campos | <a href="index.html">PC Notes</a></p>
   </footer>
 </body>
 </html>
