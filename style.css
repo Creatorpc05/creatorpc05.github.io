@@ -397,5 +397,26 @@ body {
   color: #9aa6b2;
 }
 
+/* ===== Estilos para imágenes en artículos ===== */
+.article-content img {
+  display: block;
+  margin: 20px auto;         /* centra la imagen */
+  max-width: 70%;            /* tamaño mediano, ajustable */
+  height: auto;              /* mantiene proporción */
+  border-radius: 6px;        /* esquinas suavemente redondeadas */
+}
+
+.article-content figure {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.article-content figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 8px;
+  font-style: italic;
+}
+
 
 
