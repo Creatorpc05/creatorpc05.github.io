@@ -459,7 +459,15 @@ body {
   margin: 2rem 0;
 }
 
-/* Imagen pequeña (ej: parte superior) */
+/* ==== Estilos para imágenes en artículos ==== */
+
+/* Contenedor que centra imagen + pie de foto */
+.figure {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* Imagen pequeña (parte superior) */
 .figure img.small {
   max-width: 300px;   /* tamaño pequeño */
   height: auto;
@@ -467,7 +475,7 @@ body {
   display: inline-block;
 }
 
-/* Imagen mediana (ej: centro y final) */
+/* Imagen mediana (centro y final) */
 .figure img.medium {
   max-width: 600px;   /* tamaño mediano */
   height: auto;
@@ -482,6 +490,5 @@ body {
   margin-top: 0.5rem;
   font-style: italic;
 }
-
 
 
