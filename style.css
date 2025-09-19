@@ -439,7 +439,7 @@ body {
 
 /* Imagen superior mucho más pequeña */
 .article-content img.superior {
-  width: 120px;   /* tamaño logo, bien pequeño */
+  width: 150px;   /* tamaño logo, bien pequeño */
   max-width: 100%;
   display: block;
   margin: 0 auto 15px auto; /* centrada con espacio abajo */
