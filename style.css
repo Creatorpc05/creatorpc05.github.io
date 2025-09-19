@@ -439,7 +439,7 @@ body {
 
 /* Imagen superior pequeña */
 .article-content img.superior {
-  width: 200px;   /* ajusta según te guste */
+  width: 180px;   /* ajusta según te guste */
   max-width: 100%;
 }
 
