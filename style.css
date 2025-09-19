@@ -425,7 +425,6 @@ body {
 }
 
 .article-content figure img {
-  max-width: 100%;
   height: auto;
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
@@ -438,15 +437,18 @@ body {
   font-style: italic;
 }
 
-/* Imagen superior más pequeña */
+/* Imagen superior pequeña */
 .article-content img.superior {
-  max-width: 300px;
+  width: 250px;   /* ajusta según te guste */
+  max-width: 100%;
 }
 
 /* Imagen inferior mediana */
 .article-content img.inferior {
-  max-width: 600px;
+  width: 500px;   /* ajusta según te guste */
+  max-width: 100%;
 }
+
 
 
 
