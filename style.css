@@ -451,24 +451,37 @@ body {
   max-width: 100%;
 }
 
-<!-- Imagen pequeña al inicio -->
-<div class="figure">
-  <img src="assets/powerbi2-parte superior.png" alt="Power BI vs Excel" class="small">
-  <div class="figcaption">Visualización comparativa en Power BI</div>
-</div>
+/* ==== Estilos para imágenes en artículos ==== */
 
-<!-- Imagen mediana en el centro -->
-<div class="figure">
-  <img src="assets/powerbi2-parte-casi-alfinal.png" alt="Caso práctico Power BI" class="medium">
-  <div class="figcaption">Ejemplo de automatización en Power BI</div>
-</div>
+/* Contenedor para centrar imagen + pie de foto */
+.figure {
+  text-align: center;
+  margin: 2rem 0;
+}
 
-<!-- Imagen mediana al final -->
-<div class="figure">
-  <img src="assets/powerbi2-parte-alfinal.png" alt="Conclusión Power BI" class="medium">
-  <div class="figcaption">Power BI como socio estratégico en finanzas</div>
-</div>
+/* Imagen pequeña (ej: parte superior) */
+.figure img.small {
+  max-width: 300px;   /* tamaño pequeño */
+  height: auto;
+  border-radius: 6px;
+  display: inline-block;
+}
 
+/* Imagen mediana (ej: centro y final) */
+.figure img.medium {
+  max-width: 600px;   /* tamaño mediano */
+  height: auto;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+/* Pie de foto */
+.figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
 
 
 
