@@ -451,17 +451,6 @@ body {
   max-width: 100%;
 }
 
-/* Forzar enlaces de títulos de artículos a azul */
-.article-card h2 a,
-.article-card h2 a:visited {
-  color: #4da3ff; /* azul igual al de Power BI */
-  text-decoration: none;
-}
-
-.article-card h2 a:hover {
-  color: #1e90ff; /* azul más fuerte al pasar el mouse */
-}
-
 
 
 
