@@ -490,5 +490,31 @@ body {
   margin-top: 0.5rem;
   font-style: italic;
 }
+/* ===== Bloque Bienvenida en Home ===== */
+.welcome-block {
+  background: rgba(255,255,255,0.02); /* sutil sobre el fondo oscuro */
+  border-radius: 8px;
+  padding: 18px 20px;
+  margin-bottom: 22px;
+  max-width: 780px; /* mismo ancho que contenido de artículos */
+  box-shadow: 0 1px 6px rgba(0,0,0,0.5);
+}
+
+.welcome-block .section-title {
+  margin-bottom: 8px; /* ya usa tus estilos de título */
+}
+
+.welcome-text {
+  color: #c3c9ce; /* tono sutil para párrafos */
+  line-height: 1.6;
+  margin-bottom: 12px;
+  font-size: 0.98rem;
+}
+
+/* Asegura que los botones queden alineados y no muy juntos */
+.welcome-block .btn {
+  display: inline-block;
+  margin-top: 6px;
+}
 
 
