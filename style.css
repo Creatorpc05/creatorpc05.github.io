@@ -439,7 +439,7 @@ body {
 
 /* Imagen superior mucho más pequeña */
 .article-content img.superior {
-  width: 150px;   /* más pequeño todavía */
+  width: 120px;   /* tamaño reducido para que no abarque la pantalla */
   max-width: 100%;
   display: block;
   margin: 0 auto 15px auto; /* centrada con espacio abajo */
@@ -447,9 +447,10 @@ body {
 
 /* Imagen inferior mediana */
 .article-content img.inferior {
-  width: 500px;   /* ajusta según te guste */
+  width: 500px;   /* tamaño mediano, se ve bien en el portafolio */
   max-width: 100%;
 }
+
 
 
 
