@@ -451,6 +451,23 @@ body {
   max-width: 100%;
 }
 
+<!-- Imagen pequeña al inicio -->
+<div class="figure">
+  <img src="assets/powerbi2-parte superior.png" alt="Power BI vs Excel" class="small">
+  <div class="figcaption">Visualización comparativa en Power BI</div>
+</div>
+
+<!-- Imagen mediana en el centro -->
+<div class="figure">
+  <img src="assets/powerbi2-parte-casi-alfinal.png" alt="Caso práctico Power BI" class="medium">
+  <div class="figcaption">Ejemplo de automatización en Power BI</div>
+</div>
+
+<!-- Imagen mediana al final -->
+<div class="figure">
+  <img src="assets/powerbi2-parte-alfinal.png" alt="Conclusión Power BI" class="medium">
+  <div class="figcaption">Power BI como socio estratégico en finanzas</div>
+</div>
 
 
 
