@@ -437,10 +437,12 @@ body {
   font-style: italic;
 }
 
-/* Imagen superior pequeña */
+/* Imagen superior mucho más pequeña */
 .article-content img.superior {
-  width: 50px;   /* ajusta según te guste */
+  width: 150px;   /* más pequeño todavía */
   max-width: 100%;
+  display: block;
+  margin: 0 auto 15px auto; /* centrada con espacio abajo */
 }
 
 /* Imagen inferior mediana */
