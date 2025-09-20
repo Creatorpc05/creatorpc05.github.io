@@ -150,22 +150,6 @@
       titleEl.textContent = 'Categoría: ' + cat;
       const filtered = ARTICLES_DATA.filter(a => a.category === cat);
       renderArticles(filtered, results);
-      titleEl.textContent = 'Categoría: ' + cat;
-      const filtered = ARTICLES_DATA.filter(a => a.category === cat);
-      renderArticles(filtered, results);
-
-      // --- NUEVO BLOQUE PARA SOPORTAR LOS LINKS DEL SIDEBAR ---
-      const sidebarLinks = document.querySelectorAll('.sidebar ul li a');
-      sidebarLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-          e.preventDefault();
-          const hash = link.getAttribute('href').split('#')[1];
-          if (hash) {
-            location.hash = decodeURIComponent(hash);
-            showCategoryFromHash();
-          }
-        });
-      });
     }
 
     // Eventos
