@@ -54,25 +54,27 @@
     <!-- CONTENIDO PRINCIPAL -->
     <main class="content">
       <!-- BLOQUE: Bienvenida / Introducción corta -->
-<section class="welcome-block">
-  <h2 class="section-title">Bienvenido a PC Notes</h2>
-  <p class="welcome-text">
-    Soy Pablo Campos — aquí comparto artículos, análisis y proyectos sobre Finanzas,
-    Power BI y gestión de proyectos, con foco en analítica, automatización y decisión estratégica.
-    Explora los artículos recientes o visita la sección “Acerca de” para conocer mi trayectoria.
-  </p>
-  <p>
-    <a href="articles.html" class="btn">Ver artículos</a>
-    <a href="about.html" class="btn" style="margin-left:8px; opacity:0.92;">Sobre mí</a>
-  </p>
-</section>
-<!-- /BLOQUE: Bienvenida -->
-      <h2 class="section-title">Artículos recientes</h2>
-      <p>Al hacer clic en <strong>Home</strong> verás la lista de artículos; por ahora son placeholders.</p>
-      <p>Home / Artículos</p>
+      <section class="welcome-block">
+        <h2 class="section-title">Bienvenido a PC Notes</h2>
+        <p class="welcome-text">
+          Soy Pablo Campos — aquí comparto artículos, análisis y proyectos sobre Finanzas,
+          Power BI y gestión de proyectos, con foco en analítica, automatización y decisión estratégica.
+          Explora los artículos recientes o visita la sección “Acerca de” para conocer mi trayectoria.
+        </p>
+        <p>
+          <a href="articles.html" class="btn">Ver artículos</a>
+          <a href="about.html" class="btn" style="margin-left:8px; opacity:0.92;">Sobre mí</a>
+        </p>
+      </section>
+      <!-- /BLOQUE: Bienvenida -->
 
-      <!-- **Se elimina aquí la sección "Sobre mí" y "Proyectos destacados"** 
-           (si quieres volver a mostrarlos, los pondremos en about.html más adelante) -->
+      <!-- BLOQUE: Artículos recientes (dinámicos) -->
+      <h2 class="section-title">Artículos recientes</h2>
+      <div id="latest-articles"></div>
+      <p style="margin-top:10px;">
+        <a href="articles.html" class="btn">Ver todos los artículos</a>
+      </p>
+      <!-- /BLOQUE -->
     </main>
   </div>
 
@@ -80,5 +82,33 @@
   <footer class="footer">
     <p>© 2025 Pablo Campos | <a href="index.html">PC Notes</a></p>
   </footer>
+
+  <!-- SCRIPT: Cargar últimos artículos -->
+  <script>
+    // Lista de tus artículos reales
+    const articles = [
+      { title: "Power BI vs Excel: el salto estratégico en finanzas y proyectos", link: "article-powerbi2.html", excerpt: "Descubre cómo Power BI potencia la gestión financiera y de proyectos, mejorando reportes y análisis estratégicos frente a Excel." },
+      { title: "Indicadores financieros clave para una tesorería estratégica", link: "article-finanzas1.html", excerpt: "Aprende a usar KPIs y dashboards financieros para optimizar la toma de decisiones en la gestión de tesorería y proyectos." },
+      { title: "Transformación digital en proyectos: de cuantitativos a estratégicos", link: "article-proyectos1.html", excerpt: "Implementación de metodologías ágiles y herramientas digitales para mejorar eficiencia y seguimiento de proyectos estratégicos." },
+      { title: "Power BI – Dashboard de Ventas: análisis y buenas prácticas", link: "article-powerbi.html", excerpt: "Caso práctico: desarrollo de un dashboard de ventas en Power BI con filtros, KPIs y diseño intuitivo." },
+      { title: "Tendencias financieras clave para 2025", link: "article-otros1.html", excerpt: "Explora las principales tendencias en banca digital, regulación y fintech que marcarán el futuro financiero." }
+    ];
+
+    // Seleccionar los 3 primeros artículos
+    const latestArticles = articles.slice(0, 3);
+
+    // Renderizar en HTML
+    const container = document.getElementById("latest-articles");
+    latestArticles.forEach(article => {
+      const div = document.createElement("div");
+      div.classList.add("article-card");
+      div.innerHTML = `
+        <h3><a href="${article.link}">${article.title}</a></h3>
+        <p>${article.excerpt}</p>
+        <a href="${article.link}" class="btn">Leer más</a>
+      `;
+      container.appendChild(div);
+    });
+  </script>
 </body>
 </html>
