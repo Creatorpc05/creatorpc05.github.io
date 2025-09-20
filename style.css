@@ -516,5 +516,20 @@ body {
   display: inline-block;
   margin-top: 6px;
 }
+/* ===== Enlaces de títulos de artículos ===== */
+.content a {
+  color: #4db5ff;         /* mismo azul brillante */
+  text-decoration: none;  /* sin subrayado por defecto */
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+}
+
+.content a:visited {
+  color: #4db5ff;         /* mantiene el azul aunque esté visitado */
+}
+
+.content a:hover {
+  color: #4db5ff;         /* refuerza el azul */
+  border-bottom: 1px solid #4db5ff; /* subrayado elegante al pasar el mouse */
+}
 
 
