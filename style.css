@@ -539,5 +539,11 @@ body {
   border-radius: 4px;
   padding: 4px 8px;
 }
+/* Estado activo para categorías */
+.category-list .btn.active {
+  background-color: #004080; /* Azul fuerte */
+  color: #fff;
+  font-weight: bold;
+}
 
 
