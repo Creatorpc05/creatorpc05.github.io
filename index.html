@@ -113,22 +113,6 @@ const articles = [
   }
 ];
 
-/* Renderizar los últimos 3 (no tocar más abajo) */
-const latestArticles = articles.slice(0, 3);
-const container = document.getElementById("latest-articles") || document.getElementById("latest-articles-grid");
-if (container) {
-  container.innerHTML = '';
-  latestArticles.forEach(article => {
-    const div = document.createElement("div");
-    div.className = "article-card";
-    div.innerHTML = `
-      <h3><a href="${article.link}">${article.title}</a></h3>
-      <p class="excerpt">${article.excerpt}</p>
-      <a href="${article.link}" class="btn">Leer más</a>
-    `;
-    container.appendChild(div);
-  });
-}
 
     // Seleccionar los 3 primeros artículos
     const latestArticles = articles.slice(0, 3);
