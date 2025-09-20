@@ -83,16 +83,54 @@
     <p>© 2025 Pablo Campos | <a href="index.html">PC Notes</a></p>
   </footer>
 
-  <!-- SCRIPT: Cargar últimos artículos -->
   <script>
-    // Lista de tus artículos reales
-    const articles = [
-      { title: "Power BI vs Excel: el salto estratégico en finanzas y proyectos", link: "article-powerbi2.html", excerpt: "Descubre cómo Power BI potencia la gestión financiera y de proyectos, mejorando reportes y análisis estratégicos frente a Excel." },
-      { title: "Indicadores financieros clave para una tesorería estratégica", link: "article-finanzas1.html", excerpt: "Aprende a usar KPIs y dashboards financieros para optimizar la toma de decisiones en la gestión de tesorería y proyectos." },
-      { title: "Transformación digital en proyectos: de cuantitativos a estratégicos", link: "article-proyectos1.html", excerpt: "Implementación de metodologías ágiles y herramientas digitales para mejorar eficiencia y seguimiento de proyectos estratégicos." },
-      { title: "Power BI – Dashboard de Ventas: análisis y buenas prácticas", link: "article-powerbi.html", excerpt: "Caso práctico: desarrollo de un dashboard de ventas en Power BI con filtros, KPIs y diseño intuitivo." },
-      { title: "Tendencias financieras clave para 2025", link: "article-otros1.html", excerpt: "Explora las principales tendencias en banca digital, regulación y fintech que marcarán el futuro financiero." }
-    ];
+/* Arreglo corregido con los títulos EXACTOS (copiados de articles.html) */
+const articles = [
+  {
+    title: "Power BI — Dashboard de Ventas: análisis y buenas prácticas",
+    link: "article-powerbi.html",
+    excerpt: "Caso práctico: diseño y análisis de un dashboard de ventas en Power BI — KPIs, modelo de datos y buenas prácticas..."
+  },
+  {
+    title: "Power BI vs Excel: el salto estratégico en Finanzas y Proyectos",
+    link: "article-powerbi2.html",
+    excerpt: "La evolución de Excel a Power BI ha transformado la gestión financiera y de proyectos..."
+  },
+  {
+    title: "📊 Indicadores Financieros Clave para una Tesorería Estratégica",
+    link: "article-finanzas1.html",
+    excerpt: "Descubre los principales indicadores financieros (DSO, DPO, ciclo de conversión de efectivo, liquidez)..."
+  },
+  {
+    title: "Transformación digital en finanzas: de guardianes de los números a agentes de cambio",
+    link: "article-proyectos1.html",
+    excerpt: "El área financiera evoluciona de un rol operativo a estratégico gracias a la transformación digital..."
+  },
+  {
+    title: "De la idea al sitio web: cómo usar ChatGPT para crear una página web profesional en minutos",
+    link: "article-otros1.html",
+    excerpt: "Un experimento práctico creando una tienda en línea con ayuda de ChatGPT..."
+  }
+];
+
+/* Renderizar los últimos 3 (no tocar más abajo) */
+const latestArticles = articles.slice(0, 3);
+const container = document.getElementById("latest-articles") || document.getElementById("latest-articles-grid");
+if (container) {
+  container.innerHTML = '';
+  latestArticles.forEach(article => {
+    const div = document.createElement("div");
+    div.className = "article-card";
+    div.innerHTML = `
+      <h3><a href="${article.link}">${article.title}</a></h3>
+      <p class="excerpt">${article.excerpt}</p>
+      <a href="${article.link}" class="btn">Leer más</a>
+    `;
+    container.appendChild(div);
+  });
+}
+</script>
+
 
     // Seleccionar los 3 primeros artículos
     const latestArticles = articles.slice(0, 3);
