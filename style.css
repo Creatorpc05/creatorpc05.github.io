@@ -531,5 +531,13 @@ body {
   color: #4db5ff;         /* refuerza el azul */
   border-bottom: 1px solid #4db5ff; /* subrayado elegante al pasar el mouse */
 }
+/* --- Resaltar categoría activa --- */
+.active-category {
+  background-color: #007BFF; /* azul que ya usas */
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
 
 
