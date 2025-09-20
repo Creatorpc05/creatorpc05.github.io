@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Etiquetas – PC Notes | Pablo Campos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <div class="navbar-left">
+        <a href="index.html" class="logo">PC Notes</a>
+      </div>
+      <nav class="navbar-right" aria-label="Navegación principal">
+        <a href="index.html">Home</a>
+        <a href="articles.html">Artículos</a>
+        <a href="categories.html">Categorías</a>
+        <a href="tags.html" class="active">Etiquetas</a>
+        <a href="about.html">Acerca de</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="profile">
+        <div class="profile-pic">
+          <img src="assets/foto.jpg" alt="Pablo Campos">
+        </div>
+        <h2>Pablo Campos</h2>
+        <p>Finanzas · Proyectos · Power BI · IA</p>
+
+        <div class="social-links">
+          <a href="mailto:Pablocampos0530@gmail.com">📧 Email</a><br>
+          <a href="https://www.linkedin.com/in/pablo-campos-174785174/" target="_blank">🔗 LinkedIn</a><br>
+          <a href="https://github.com/Creatorpc05" target="_blank">👨‍💻 GitHub</a>
+        </div>
+
+        <h3>Temas</h3>
+        <ul>
+          <li><a href="categories.html#Power%20BI">Power BI</a></li>
+          <li><a href="categories.html#Finanzas">Finanzas</a></li>
+          <li><a href="categories.html#Proyectos">Proyectos</a></li>
+          <li><a href="categories.html#Otros">Otros</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="content">
+      <section class="tags-block">
+        <h2 class="section-title">Etiquetas</h2>
+        <p class="muted">Selecciona una etiqueta para ver los artículos etiquetados.</p>
+
+        <!-- Lista dinámica de etiquetas -->
+        <div id="tag-list" style="margin-bottom:16px; display:flex; gap:8px; flex-wrap:wrap;"></div>
+
+        <!-- Resultados (artículos) -->
+        <div id="tag-results"></div>
+      </section>
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Pablo Campos | <a href="index.html">PC Notes</a></p>
+  </footer>
+
+  <!-- SCRIPT: lógica para etiquetas -->
+  <script>
+    // ==== 1) Lista de artículos y sus etiquetas ====
+    // Si agregas un artículo nuevo, copia una entrada similar aquí (title, link, excerpt, tags array)
+    const ARTICLES_DATA = [
+      {
+        title: "Power BI — Dashboard de Ventas: análisis y buenas prácticas",
+        link: "article-powerbi.html",
+        excerpt: "Caso práctico: diseño y análisis de un dashboard de ventas en Power BI — KPIs, modelo de datos y buenas prácticas...",
+        tags: ["Power BI", "Ventas"],
+        category: "Power BI"
+      },
+      {
+        title: "Power BI vs Excel: el salto estratégico en Finanzas y Proyectos",
+        link: "article-powerbi2.html",
+        excerpt: "La evolución de Excel a Power BI ha transformado la gestión financiera y de proyectos, pasando de reportes manuales a dashboards interactivos...",
+        tags: ["Finanzas", "Proyectos", "Business Intelligence"],
+        category: "Power BI"
+      },
+      {
+        title: "📊 Indicadores Financieros Clave para una Tesorería Estratégica",
+        link: "article-finanzas1.html",
+        excerpt: "Descubre los principales indicadores financieros (DSO, DPO, ciclo de conversión de efectivo, liquidez) y cómo aplicarlos para una gestión de tesorería más estratégica...",
+        tags: ["Tesorería", "KPIs", "Estrategia"],
+        category: "Finanzas"
+      },
+      {
+        title: "Transformación digital en finanzas: de guardianes de los números a agentes de cambio",
+        link: "article-proyectos1.html",
+        excerpt: "El área financiera evoluciona de un rol operativo a estratégico gracias a la transformación digital. RPA, BI, IA y ERP en la nube convierten a las finanzas en un motor de innovación...",
+        tags: ["Transformación Digital", "Tesorería", "Innovación"],
+        category: "Proyectos"
+      },
+      {
+        title: "De la idea al sitio web: cómo usar ChatGPT para crear una página web profesional en minutos",
+        link: "article-otros1.html",
+        excerpt: "Un experimento práctico creando una tienda en línea con ayuda de ChatGPT. De un simple prompt a un sitio funcional publicado en internet en pocas horas.",
+        tags: ["ChatGPT", "Automatización", "Web"],
+        category: "Otros"
+      }
+    ];
+
+    // ==== 2) Utilidades: obtener lista única de etiquetas con conteo ====
+    function buildTagIndex() {
+      const map = new Map();
+      ARTICLES_DATA.forEach(a => {
+        (a.tags || []).forEach(tag => {
+          const key = tag.trim();
+          map.set(key, (map.get(key) || 0) + 1);
+        });
+      });
+      // devolver array de objetos { tag, count } ordenados por count desc o alfabéticamente
+      return Array.from(map.entries()).map(([tag, count]) => ({ tag, count }))
+                  .sort((a,b) => b.count - a.count || a.tag.localeCompare(b.tag));
+    }
+
+    // ==== 3) Renderizar lista de etiquetas ==== 
+    function renderTagList(container) {
+      const tags = buildTagIndex();
+      container.innerHTML = '';
+      if (tags.length === 0) {
+        container.innerHTML = '<p>No hay etiquetas aún.</p>';
+        return;
+      }
+      tags.forEach(t => {
+        const a = document.createElement('a');
+        a.href = '#' + encodeURIComponent(t.tag);
+        a.className = 'btn';
+        a.style.display = 'inline-block';
+        a.style.marginBottom = '6px';
+        a.textContent = `${t.tag} (${t.count})`;
+        container.appendChild(a);
+      });
+    }
+
+    // ==== 4) Renderizar artículos para una etiqueta dada ====
+    function renderArticles(list, container) {
+      container.innerHTML = '';
+      if (!list || list.length === 0) {
+        container.innerHTML = '<p>No se encontraron artículos con esa etiqueta.</p>';
+        return;
+      }
+      list.forEach(a => {
+        const card = document.createElement('article');
+        card.className = 'article-card';
+        card.innerHTML = `
+          <h3><a href="${a.link}">${a.title}</a></h3>
+          <p class="excerpt">${a.excerpt}</p>
+          <a class="btn" href="${a.link}">Leer más</a>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    // ==== 5) Hash handling (tag) ====
+    function getTagFromHash() {
+      return decodeURIComponent(location.hash.replace(/^#/, '')) || null;
+    }
+
+    function showTagFromHash() {
+      const tag = getTagFromHash();
+      const results = document.getElementById('tag-results');
+      const titleEl = document.querySelector('.tags-block .section-title');
+
+      if (!tag) {
+        titleEl.textContent = 'Etiquetas';
+        results.innerHTML = '<p>Haz clic en una etiqueta arriba para ver los artículos relacionados.</p>';
+        return;
+      }
+
+      titleEl.textContent = 'Etiqueta: ' + tag;
+      const filtered = ARTICLES_DATA.filter(a => (a.tags || []).some(t => t === tag));
+      renderArticles(filtered, results);
+      // desplazar un poco hacia el contenido en pantallas pequeñas
+      window.scrollTo({ top: titleEl.getBoundingClientRect().top + window.scrollY - 20, behavior: 'smooth' });
+    }
+
+    // ==== 6) Inicialización ====
+    document.addEventListener('DOMContentLoaded', () => {
+      renderTagList(document.getElementById('tag-list'));
+      showTagFromHash();
+    });
+    window.addEventListener('hashchange', showTagFromHash);
+  </script>
+</body>
+</html>
