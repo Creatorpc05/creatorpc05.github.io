@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- NAVBAR (idéntico al index.html) -->
+  <!-- NAVBAR -->
   <header class="navbar">
     <div class="navbar-inner">
       <div class="navbar-left">
@@ -16,7 +16,7 @@
       <nav class="navbar-right" aria-label="Navegación principal">
         <a href="index.html">Home</a>
         <a href="articles.html">Artículos</a>
-        <a href="categories.html">Categorías</a>
+        <a href="categories.html" class="active">Categorías</a>
         <a href="tags.html">Etiquetas</a>
         <a href="about.html">Acerca de</a>
       </nav>
@@ -25,7 +25,7 @@
 
   <!-- MAIN CONTENT -->
   <div class="container">
-    <!-- SIDEBAR (idéntico al index.html) -->
+    <!-- SIDEBAR -->
     <aside class="sidebar">
       <div class="profile">
         <div class="profile-pic">
@@ -56,7 +56,7 @@
         <h2 class="section-title">Categorías</h2>
         <p class="muted">Selecciona una categoría para ver los artículos relacionados.</p>
 
-        <!-- Lista de categorías (visual) -->
+        <!-- Lista de categorías -->
         <div class="category-list" id="category-list" style="margin-bottom:16px; display:flex; gap:10px; flex-wrap:wrap;">
           <a href="#Power%20BI" class="btn">Power BI</a>
           <a href="#Finanzas" class="btn">Finanzas</a>
@@ -64,9 +64,8 @@
           <a href="#Otros" class="btn">Otros</a>
         </div>
 
-        <!-- Contenedor donde se mostrarán los artículos filtrados -->
+        <!-- Resultados dinámicos -->
         <div id="category-results"></div>
-
       </section>
     </main>
   </div>
@@ -76,10 +75,9 @@
     <p>© 2025 Pablo Campos | <a href="index.html">PC Notes</a></p>
   </footer>
 
-  <!-- SCRIPT: lógica simple para mostrar artículos por categoría -->
+  <!-- SCRIPT -->
   <script>
-    // --- CONFIG: aquí defines tus artículos y su categoría ---
-    // Cuando agregues un artículo nuevo, copia una entrada similar aquí
+    // --- Lista de artículos con categoría ---
     const ARTICLES_DATA = [
       {
         title: "Power BI vs Excel: el salto estratégico en finanzas y proyectos",
@@ -113,7 +111,7 @@
       }
     ];
 
-    // --- Función para mostrar artículos en el contenedor ---
+    // --- Función para mostrar artículos ---
     function renderArticles(list, container) {
       container.innerHTML = '';
       if (!list || list.length === 0) {
@@ -133,7 +131,7 @@
       });
     }
 
-    // --- Manejo de cambio de hash (categoria) ---
+    // --- Manejo de categorías con hash ---
     function getCategoryFromHash() {
       return decodeURIComponent(location.hash.replace(/^#/, '')) || null;
     }
@@ -144,7 +142,6 @@
       const titleEl = document.querySelector('.categories-block .section-title');
 
       if (!cat) {
-        // vista inicial: muestra un mensaje o todos los artículos
         titleEl.textContent = 'Categorías';
         results.innerHTML = '<p>Selecciona una categoría arriba para ver los artículos relacionados.</p>';
         return;
@@ -155,7 +152,7 @@
       renderArticles(filtered, results);
     }
 
-    // eventos
+    // Eventos
     window.addEventListener('hashchange', showCategoryFromHash);
     document.addEventListener('DOMContentLoaded', () => {
       showCategoryFromHash();
