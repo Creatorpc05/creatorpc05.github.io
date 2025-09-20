@@ -148,6 +148,15 @@
       }
 
       titleEl.textContent = 'Categoría: ' + cat;
+      // --- Marcar botón activo en lista de categorías ---
+const categoryButtons = document.querySelectorAll('.category-list .btn');
+categoryButtons.forEach(btn => {
+  if (btn.textContent.trim() === cat) {
+    btn.classList.add('active');
+  } else {
+    btn.classList.remove('active');
+  }
+});
       const filtered = ARTICLES_DATA.filter(a => a.category === cat);
       renderArticles(filtered, results);
 
